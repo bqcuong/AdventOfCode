@@ -13,20 +13,20 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class Day3Test extends AbstractTest {
+public class Day03Test extends AbstractTest {
 
-    private Day3 solution;
+    private Day03 solution;
 
     @BeforeAll
     static void setUp() {
-        INPUT_PATH = "year2023/Day3_Input.txt";
-        PART1_SAMPLE_INPUT_PATH = "year2023/Day3_Part1_SampleInput.txt";
-        PART2_SAMPLE_INPUT_PATH = "year2023/Day3_Part2_SampleInput.txt";
+        INPUT_PATH = "year2023/Day03_Input.txt";
+        PART1_SAMPLE_INPUT_PATH = "year2023/Day03_Part01_SampleInput.txt";
+        PART2_SAMPLE_INPUT_PATH = "year2023/Day03_Part02_SampleInput.txt";
     }
 
     @BeforeEach
     void init() {
-        solution = new Day3();
+        solution = new Day03();
     }
 
     @ParameterizedTest

@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Day1 extends Solution {
+public class Day01 extends Solution {
 
     private static final Map<String, Character> NUM_MAP = new HashMap<>() {{
        put("one", '1');

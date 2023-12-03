@@ -5,7 +5,7 @@ import net.bqc.aoc.Solution;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Day3 extends Solution {
+public class Day03 extends Solution {
 
     @Override
     public int solve(PART_NUMBER part, List<String> inputLines) {

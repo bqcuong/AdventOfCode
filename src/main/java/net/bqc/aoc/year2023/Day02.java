@@ -7,14 +7,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Day2 extends Solution {
+public class Day02 extends Solution {
 
-    private class Requirements {
+    private static class Requirements {
         int gameId;
         Map<String, Integer> requirements = new HashMap<>();
     }
 
-    private Map<String, Integer> providedCubes = new HashMap<>() {{
+    private final Map<String, Integer> providedCubes = new HashMap<>() {{
         put("red", 12);
         put("green", 13);
         put("blue", 14);
@@ -50,8 +50,7 @@ public class Day2 extends Solution {
          Requirements r = new Requirements();
 
         String[] parts = gameConfiguration.split(":");
-        int gameId = Integer.parseInt(parts[0].split("\s")[1]);
-        r.gameId = gameId;
+        r.gameId = Integer.parseInt(parts[0].split("\s")[1]);
 
         String[] gameRounds = parts[1].split(";");
         for (String round : gameRounds) {
