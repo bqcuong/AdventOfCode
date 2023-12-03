@@ -1,7 +1,7 @@
 package net.bqc.aoc.year2023;
 
-import net.bqc.aoc.Solution;
 import net.bqc.aoc.AbstractTest;
+import net.bqc.aoc.Solution;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.params.ParameterizedTest;
