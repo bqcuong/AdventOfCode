@@ -20,8 +20,7 @@ public class Day03Test extends AbstractTest {
     @BeforeAll
     static void setUp() {
         INPUT_PATH = "year2023/Day03_Input.txt";
-        PART1_SAMPLE_INPUT_PATH = "year2023/Day03_Part01_SampleInput.txt";
-        PART2_SAMPLE_INPUT_PATH = "year2023/Day03_Part02_SampleInput.txt";
+        SAMPLE_INPUT_PATH = "year2023/Day03_SampleInput.txt";
     }
 
     @BeforeEach
@@ -44,7 +43,7 @@ public class Day03Test extends AbstractTest {
     }
 
     static Stream<Arguments> sampleDataSource() {
-        List<String> inputLines = getPart1SampleInput();
+        List<String> inputLines = getSampleInput();
         return Stream.of(
             Arguments.of(Solution.PART_NUMBER.ONE, inputLines, 4361),
             Arguments.of(Solution.PART_NUMBER.TWO, inputLines, 467835)
