@@ -53,7 +53,6 @@ public class Day01Test extends AbstractTest {
         return Stream.of(
             Arguments.of("9cbncbxclbvkmfzdnldc", 99),
 
-
             Arguments.of("1abc2", 12),
             Arguments.of("pqr3stu8vwx", 38),
             Arguments.of("a1b2c3d4e5f", 15),
