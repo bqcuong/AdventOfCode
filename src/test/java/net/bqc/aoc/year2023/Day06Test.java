@@ -44,7 +44,7 @@ public class Day06Test extends AbstractTest {
             Arguments.of(Solution.PART_NUMBER.TWO, sampleInputLines, new BigInteger("71503")),
 
             Arguments.of(Solution.PART_NUMBER.ONE, inputLines, new BigInteger("1413720")),
-            Arguments.of(Solution.PART_NUMBER.TWO, inputLines, new BigInteger("1413720"))
+            Arguments.of(Solution.PART_NUMBER.TWO, inputLines, new BigInteger("30565288"))
         );
     }
 }
