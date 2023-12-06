@@ -29,30 +29,19 @@ public class Day03Test extends AbstractTest {
     }
 
     @ParameterizedTest
-    @MethodSource("sampleDataSource")
-    void testSolverWithSample(Solution.PART_NUMBER part, List<String> inputLines, int expectedSum) {
-        int computedSum = solution.solve(part, inputLines);
-        assertEquals(expectedSum, computedSum);
-    }
-
-    @ParameterizedTest
     @MethodSource("inputDataSource")
     void testSolver(Solution.PART_NUMBER part, List<String> inputLines, int expectedSum) {
         int computedSum = solution.solve(part, inputLines);
         assertEquals(expectedSum, computedSum);
     }
 
-    static Stream<Arguments> sampleDataSource() {
-        List<String> inputLines = getSampleInput();
-        return Stream.of(
-            Arguments.of(Solution.PART_NUMBER.ONE, inputLines, 4361),
-            Arguments.of(Solution.PART_NUMBER.TWO, inputLines, 467835)
-        );
-    }
-
     static Stream<Arguments> inputDataSource() {
+        List<String> sampleInputLines = getSampleInput();
         List<String> inputLines = getInput();
         return Stream.of(
+            Arguments.of(Solution.PART_NUMBER.ONE, sampleInputLines, 4361),
+            Arguments.of(Solution.PART_NUMBER.TWO, sampleInputLines, 467835),
+
             Arguments.of(Solution.PART_NUMBER.ONE, inputLines, 539590),
             Arguments.of(Solution.PART_NUMBER.TWO, inputLines, 80703636)
         );
