@@ -3,11 +3,14 @@ This repository contains my Java solutions for the [Advent of Code](https://adve
 
 *Let's solve and count together!*
 
+![build](https://github.com/bqcuong/AdventOfCode/actions/workflows/maven.yml/badge.svg)
+
 #### Requirements
 * Java 17
 * Maven (a wrapper is provided)
 
 ### 2023
+
 | Day  | Task                                                                   | Stars | Solutions                                                                                                        |
 |:----:|------------------------------------------------------------------------|:------|------------------------------------------------------------------------------------------------------------------|
 |  01  | [Trebuchet?!](https://adventofcode.com/2023/day/1)                     | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2023/Day01.java), [Test](src/test/java/net/bqc/aoc/year2023/Day01Test.java) | 
