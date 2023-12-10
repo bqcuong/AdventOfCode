@@ -32,7 +32,6 @@ public class Day08 extends Solution {
                 .map(l -> travelInMaps(p, l))
                 .toList();
 
-            System.out.println(steps);
             return SolutionUtils.lcm(steps);
         }
     }

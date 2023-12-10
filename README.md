@@ -19,4 +19,5 @@ This repository contains my Java solutions for the [Advent of Code](https://adve
 | 04  | [Scratchcards](https://adventofcode.com/2023/day/4)                    | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2023/Day04.java), [Test](src/test/java/net/bqc/aoc/year2023/Day04Test.java) | 
 | 05  | [If You Give A Seed A Fertilizer](https://adventofcode.com/2023/day/5) | ⭐     | [Code](src/main/java/net/bqc/aoc/year2023/Day05.java), [Test](src/test/java/net/bqc/aoc/year2023/Day05Test.java) | 
 | 06  | [Wait For It](https://adventofcode.com/2023/day/6)                     | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2023/Day06.java), [Test](src/test/java/net/bqc/aoc/year2023/Day06Test.java) | 
-| 07  | [Camel Cards](https://adventofcode.com/2023/day/7)                     | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2023/Day07.java), [Test](src/test/java/net/bqc/aoc/year2023/Day07Test.java) |
+| 07  | [Camel Cards](https://adventofcode.com/2023/day/7)                     | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2023/Day07.java), [Test](src/test/java/net/bqc/aoc/year2023/Day07Test.java) | 
+| 08  | [Haunted Wasteland](https://adventofcode.com/2023/day/8)               | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2023/Day08.java), [Test](src/test/java/net/bqc/aoc/year2023/Day08Test.java) | 
