@@ -41,7 +41,7 @@ public class Day06 extends Solution {
     }
 
     @Override
-    public int solve(PART_NUMBER part, List<String> inputLines) {
+    public long solve(PART_NUMBER part, List<String> inputLines) {
         return 0;
     }
 }

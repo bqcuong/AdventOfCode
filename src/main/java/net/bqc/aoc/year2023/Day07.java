@@ -68,10 +68,10 @@ public class Day07 extends Solution {
 
     class CardHand implements Comparable<CardHand> {
         HandType type;
-        int bid;
+        long bid;
         List<Card> cards;
 
-        CardHand(String cardList, int bid) {
+        CardHand(String cardList, long bid) {
             this.cards = Arrays.stream(cardList.split("")).map(x -> new Card(x.charAt(0))).toList();
             this.bid = bid;
 
@@ -108,7 +108,7 @@ public class Day07 extends Solution {
         private HandType parseHandType(List<Card> cardList) {
             List<Card> sortedCards = new ArrayList<>(cardList);
             Collections.sort(sortedCards);
-            int[] r = sortedCards.stream().mapToInt(x -> x.rank).toArray();
+            long[] r = sortedCards.stream().mapToLong(x -> x.rank).toArray();
 
             if (checkEquals(r[0], r[1], r[2], r[3], r[4])) {
                 return HandType.FIVE_OF_A_KIND;
@@ -143,7 +143,7 @@ public class Day07 extends Solution {
             return HandType.HIGH_CARD;
         }
 
-        private boolean checkEquals(int...arr) {
+        private boolean checkEquals(long...arr) {
             if (arr.length <= 1) {
                 return true;
             }
@@ -179,15 +179,15 @@ public class Day07 extends Solution {
     }
 
     @Override
-    public int solve(PART_NUMBER part, List<String> inputLines) {
+    public long solve(PART_NUMBER part, List<String> inputLines) {
         this.pup = part;
 
         List<CardHand> cardHands = new ArrayList<>(inputLines.stream()
-            .map(x -> new CardHand(x.split("\s+")[0], Integer.parseInt(x.split("\s+")[1])))
+            .map(x -> new CardHand(x.split("\s+")[0], Long.parseLong(x.split("\s+")[1])))
             .toList());
 
         Collections.sort(cardHands);
-        int sum = 0;
+        long sum = 0;
         for (int i = 0; i < cardHands.size(); i++) {
             sum += (i + 1) * cardHands.get(i).bid;
         }

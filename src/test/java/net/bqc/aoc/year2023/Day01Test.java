@@ -29,15 +29,15 @@ public class Day01Test extends AbstractTest {
 
     @ParameterizedTest
     @MethodSource("inputDataSource")
-    void testSolver(Solution.PART_NUMBER part, List<String> inputLines, int expectedSum) {
-        int computedSum = solution.solve(part, inputLines);
+    void testSolver(Solution.PART_NUMBER part, List<String> inputLines, long expectedSum) {
+        long computedSum = solution.solve(part, inputLines);
         assertEquals(expectedSum, computedSum);
     }
 
     @ParameterizedTest
     @MethodSource("sampleDataSource")
-    void testParseCalibrationValue(String calibrationLine, int expectedCalibrationValue) {
-        int parsedCalibrationValue = solution.parseCalibrationValue(calibrationLine);
+    void testParseCalibrationValue(String calibrationLine, long expectedCalibrationValue) {
+        long parsedCalibrationValue = solution.parseCalibrationValue(calibrationLine);
         assertEquals(expectedCalibrationValue, parsedCalibrationValue);
     }
 

@@ -29,15 +29,15 @@ public class Day02Test extends AbstractTest {
 
     @ParameterizedTest
     @MethodSource("inputDataSource")
-    void testSolver(Solution.PART_NUMBER part, List<String> inputLines, int expectedSum) {
-        int computedSum = solution.solve(part, inputLines);
+    void testSolver(Solution.PART_NUMBER part, List<String> inputLines, long expectedSum) {
+        long computedSum = solution.solve(part, inputLines);
         assertEquals(expectedSum, computedSum);
     }
 
     @ParameterizedTest
     @MethodSource("sampleDataSource")
-    void testCheckGamePossible(String gameConfiguration, int expectedValue) {
-        int isPossible = solution.checkGamePossible(gameConfiguration);
+    void testCheckGamePossible(String gameConfiguration, long expectedValue) {
+        long isPossible = solution.checkGamePossible(gameConfiguration);
         assertEquals(expectedValue, isPossible);
     }
 

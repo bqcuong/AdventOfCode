@@ -3,7 +3,10 @@ package net.bqc.aoc.year2023;
 import net.bqc.aoc.Solution;
 
 import java.math.BigInteger;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
 
 public class Day05 extends Solution {
 
@@ -57,7 +60,7 @@ public class Day05 extends Solution {
     }
 
     @Override
-    public int solve(PART_NUMBER part, List<String> inputLines) {
+    public long solve(PART_NUMBER part, List<String> inputLines) {
         return 0;
     }
 

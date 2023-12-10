@@ -40,7 +40,7 @@ public class Day01 extends Solution {
         return 0;
     }
 
-    public int parseCalibrationValue(String calibrationLine) {
+    public long parseCalibrationValue(String calibrationLine) {
         char firstDigit = 0;
         char lastDigit = 0;
 
@@ -64,12 +64,12 @@ public class Day01 extends Solution {
             }
         }
 
-        return Integer.parseInt("" + firstDigit + lastDigit);
+        return Long.parseLong("" + firstDigit + lastDigit);
     }
 
     @Override
-    public int solve(PART_NUMBER part, List<String> inputLines) {
+    public long solve(PART_NUMBER part, List<String> inputLines) {
         this.pup = part;
-        return inputLines.stream().mapToInt(this::parseCalibrationValue).sum();
+        return inputLines.stream().mapToLong(this::parseCalibrationValue).sum();
     }
 }

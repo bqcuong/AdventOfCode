@@ -11,5 +11,5 @@ public abstract class Solution {
     // Part Under Processing
     protected PART_NUMBER pup = PART_NUMBER.ONE;
 
-    public abstract int solve(PART_NUMBER part, List<String> inputLines);
+    public abstract long solve(PART_NUMBER part, List<String> inputLines);
 }

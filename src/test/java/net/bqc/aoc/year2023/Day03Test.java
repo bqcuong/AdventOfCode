@@ -30,8 +30,8 @@ public class Day03Test extends AbstractTest {
 
     @ParameterizedTest
     @MethodSource("inputDataSource")
-    void testSolver(Solution.PART_NUMBER part, List<String> inputLines, int expectedSum) {
-        int computedSum = solution.solve(part, inputLines);
+    void testSolver(Solution.PART_NUMBER part, List<String> inputLines, long expectedSum) {
+        long computedSum = solution.solve(part, inputLines);
         assertEquals(expectedSum, computedSum);
     }
 
