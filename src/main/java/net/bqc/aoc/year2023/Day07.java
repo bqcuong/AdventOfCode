@@ -2,10 +2,7 @@ package net.bqc.aoc.year2023;
 
 import net.bqc.aoc.Solution;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class Day07 extends Solution {
 
@@ -25,7 +22,7 @@ public class Day07 extends Solution {
         }
     }
 
-    static class Card implements Comparable<Card> {
+    class Card implements Comparable<Card> {
         char label;
         int rank;
 
@@ -35,7 +32,14 @@ public class Day07 extends Solution {
                 case 'A' -> this.rank = 14;
                 case 'K' -> this.rank = 13;
                 case 'Q' -> this.rank = 12;
-                case 'J' -> this.rank = 11;
+                case 'J' -> {
+                    if (Day07.this.pup == PART_NUMBER.ONE) {
+                        this.rank = 11;
+                    }
+                    else {
+                        this.rank = 1;
+                    }
+                }
                 case 'T' -> this.rank = 10;
                 default -> this.rank = this.label - '0';
             }
@@ -50,9 +54,19 @@ public class Day07 extends Solution {
         public int compareTo(Card o) {
             return this.rank - o.rank;
         }
+
+        @Override
+        public boolean equals(Object obj) {
+            return this.label == ((Card)obj).label;
+        }
+
+        @Override
+        public int hashCode() {
+            return Objects.hash(label);
+        }
     }
 
-    static class CardHand implements Comparable<CardHand> {
+    class CardHand implements Comparable<CardHand> {
         HandType type;
         int bid;
         List<Card> cards;
@@ -60,11 +74,39 @@ public class Day07 extends Solution {
         CardHand(String cardList, int bid) {
             this.cards = Arrays.stream(cardList.split("")).map(x -> new Card(x.charAt(0))).toList();
             this.bid = bid;
-            this.type = parseHandType();
+
+            this.type = parseHandType(this.cards);
+
+            if (Day07.this.pup == PART_NUMBER.TWO) {
+                Card j = new Card('J');
+                Set<Card> uniqueCards = new HashSet<>(this.cards);
+
+                if (!this.cards.contains(j)) {
+                    return;
+                }
+
+                for (Card card : uniqueCards) {
+                    List<Card> newCardList = new ArrayList<>();
+
+                    for (Card c : this.cards) {
+                        if (j.equals(c)) {
+                            newCardList.add(new Card(card.label));
+                        }
+                        else {
+                            newCardList.add(new Card(c.label));
+                        }
+                    }
+
+                    HandType newType = parseHandType(newCardList);
+                    if (newType.value > this.type.value) {
+                        this.type = newType;
+                    }
+                }
+            }
         }
 
-        private HandType parseHandType() {
-            List<Card> sortedCards = new ArrayList<>(this.cards);
+        private HandType parseHandType(List<Card> cardList) {
+            List<Card> sortedCards = new ArrayList<>(cardList);
             Collections.sort(sortedCards);
             int[] r = sortedCards.stream().mapToInt(x -> x.rank).toArray();
 
@@ -138,6 +180,8 @@ public class Day07 extends Solution {
 
     @Override
     public int solve(PART_NUMBER part, List<String> inputLines) {
+        this.pup = part;
+
         List<CardHand> cardHands = new ArrayList<>(inputLines.stream()
             .map(x -> new CardHand(x.split("\s+")[0], Integer.parseInt(x.split("\s+")[1])))
             .toList());

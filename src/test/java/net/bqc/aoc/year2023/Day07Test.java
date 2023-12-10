@@ -40,7 +40,10 @@ public class Day07Test extends AbstractTest {
         List<String> inputLines = getInput();
         return Stream.of(
             Arguments.of(Solution.PART_NUMBER.ONE, sampleInputLines, 6440),
-            Arguments.of(Solution.PART_NUMBER.ONE, inputLines, 251287184)
+            Arguments.of(Solution.PART_NUMBER.ONE, inputLines, 251287184),
+
+            Arguments.of(Solution.PART_NUMBER.TWO, sampleInputLines, 5905),
+            Arguments.of(Solution.PART_NUMBER.TWO, inputLines, 250757288)
         );
     }
 }
