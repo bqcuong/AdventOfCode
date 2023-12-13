@@ -4,8 +4,10 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
-public class ResourcesUtils {
+public class IOUtils {
 
     public static String readResourceFile(String resourcePath) {
         try {
@@ -16,6 +18,13 @@ public class ResourcesUtils {
         catch (IOException e) {
             return "";
         }
+    }
+
+    public static void writeFile(String path, String content) {
+        try {
+            Files.write(Paths.get(path), content.getBytes());
+        }
+        catch (IOException ignored) {}
     }
 
     private static String readFromInputStream(InputStream inputStream) throws IOException {
