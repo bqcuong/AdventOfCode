@@ -46,7 +46,7 @@ public class Day10 extends Solution {
         if (part == PART_NUMBER.TWO) {
             // Use Shoelace's theorem to compute the area of polygon:
             // A = 1/2(x1y2 + x2y3 + ... + xny1) - (y1x2 + y2x3 + ... + x1yn)
-            // The ara of the polygon can also be computed with Rick's theorem
+            // The area of the polygon can also be computed with Rick's theorem
             // A = (1/2)P + I - 1, with P = #lattice points on the edges, I = #lattice points in the interior
             // For the part 2, we have to find I
 
@@ -99,8 +99,6 @@ public class Day10 extends Solution {
                 char nextTitle = mat[nextX][nextY];
                 boolean canMove = checkValidMove(currentTile, nextTitle, dir);
                 if (canMove && Math.abs(dir - lastDirection) != 2) { // do not go back to where you come from
-//                    System.out.format("[%d %d] -> [%d %d]: %c -> %c\n", currentX, currentY, nextX, nextY, currentTile, nextTitle);
-
                     currentX = nextX;
                     currentY = nextY;
                     lastDirection = dir;
@@ -116,8 +114,10 @@ public class Day10 extends Solution {
 
     private boolean checkValidMove(char currentTile, char nextTile, int direction) {
         if (PIPE_INCOMING_DIRECTIONS.containsKey(nextTile)) {
-            for (int outComing : PIPE_INCOMING_DIRECTIONS.get(currentTile)) { // find in accepted out-coming connections of current pipe
-                if (Math.abs(outComing - direction) == 2 && PIPE_INCOMING_DIRECTIONS.get(nextTile).contains(direction)) { // next pipe accepts incoming connection from this direction
+            // find in accepted out-coming connection list of the current pipe
+            for (int outComing : PIPE_INCOMING_DIRECTIONS.get(currentTile)) {
+                // make sure the next pipe also accepts incoming connection from this direction
+                if (Math.abs(outComing - direction) == 2 && PIPE_INCOMING_DIRECTIONS.get(nextTile).contains(direction)) {
                     return true;
                 }
             }
@@ -135,23 +135,5 @@ public class Day10 extends Solution {
             }
         }
         return new int[]{};
-    }
-
-    public static void printMatrix(char[][] matrix) {
-        for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[i].length; j++) {
-                System.out.print(matrix[i][j] + " ");
-            }
-            System.out.println();
-        }
-    }
-
-    public static void printMatrix(int[][] matrix) {
-        for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[i].length; j++) {
-                System.out.printf("%02d ", matrix[i][j]);
-            }
-            System.out.println();
-        }
     }
 }
