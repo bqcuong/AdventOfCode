@@ -41,4 +41,10 @@ public class SolutionUtils {
             System.out.println();
         }
     }
+
+    public static void swapElements(int[][] matrix, int row1, int col1, int row2, int col2) {
+        int temp = matrix[row1][col1];
+        matrix[row1][col1] = matrix[row2][col2];
+        matrix[row2][col2] = temp;
+    }
 }
