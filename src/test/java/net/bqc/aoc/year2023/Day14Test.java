@@ -40,10 +40,10 @@ public class Day14Test extends AbstractTest {
         List<String> inputLines = getInput();
         return Stream.of(
             Arguments.of(Solution.PART_NUMBER.ONE, sampleInputLines, 136),
-            Arguments.of(Solution.PART_NUMBER.ONE, inputLines, 103614)
+            Arguments.of(Solution.PART_NUMBER.ONE, inputLines, 103614),
             
-//            Arguments.of(Solution.PART_NUMBER.TWO, sampleInputLines, 82000210),
-//            Arguments.of(Solution.PART_NUMBER.TWO, inputLines, 568914596391L)
+            Arguments.of(Solution.PART_NUMBER.TWO, sampleInputLines, 64),
+            Arguments.of(Solution.PART_NUMBER.TWO, inputLines, 83790)
         );
     }
 }
