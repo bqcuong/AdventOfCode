@@ -25,5 +25,5 @@ This repository contains my Java solutions for the [Advent of Code](https://adve
 | 10  | [Pipe Maze](https://adventofcode.com/2023/day/10)                      | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2023/Day10.java), [Test](src/test/java/net/bqc/aoc/year2023/Day10Test.java) | 
 | 11  | [Cosmic Expansion](https://adventofcode.com/2023/day/11)               | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2023/Day11.java), [Test](src/test/java/net/bqc/aoc/year2023/Day11Test.java) | 
 | 12  | [Hot Springs](https://adventofcode.com/2023/day/12)                    |       | [Code](src/main/java/net/bqc/aoc/year2023/Day12.java), [Test](src/test/java/net/bqc/aoc/year2023/Day12Test.java) | 
-| 13  | [Point of Incidence](https://adventofcode.com/2023/day/13)             |       | [Code](src/main/java/net/bqc/aoc/year2023/Day13.java), [Test](src/test/java/net/bqc/aoc/year2023/Day13Test.java) | 
+| 13  | [Point of Incidence](https://adventofcode.com/2023/day/13)             | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2023/Day13.java), [Test](src/test/java/net/bqc/aoc/year2023/Day13Test.java) | 
 | 14  | [Parabolic Reflector Dish](https://adventofcode.com/2023/day/14)       | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2023/Day14.java), [Test](src/test/java/net/bqc/aoc/year2023/Day14Test.java) | 
