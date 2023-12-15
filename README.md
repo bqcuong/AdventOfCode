@@ -27,3 +27,4 @@ This repository contains my Java solutions for the [Advent of Code](https://adve
 | 12  | [Hot Springs](https://adventofcode.com/2023/day/12)                    |       | [Code](src/main/java/net/bqc/aoc/year2023/Day12.java), [Test](src/test/java/net/bqc/aoc/year2023/Day12Test.java) | 
 | 13  | [Point of Incidence](https://adventofcode.com/2023/day/13)             | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2023/Day13.java), [Test](src/test/java/net/bqc/aoc/year2023/Day13Test.java) | 
 | 14  | [Parabolic Reflector Dish](https://adventofcode.com/2023/day/14)       | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2023/Day14.java), [Test](src/test/java/net/bqc/aoc/year2023/Day14Test.java) | 
+| 15  | [Lens Library](https://adventofcode.com/2023/day/15)                   | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2023/Day15.java), [Test](src/test/java/net/bqc/aoc/year2023/Day15Test.java) | 
