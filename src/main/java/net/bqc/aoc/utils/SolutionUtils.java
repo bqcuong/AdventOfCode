@@ -45,6 +45,15 @@ public class SolutionUtils {
         }
     }
 
+    public static void printMatrix(char[][] matrix) {
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                System.out.printf("%c ", matrix[i][j]);
+            }
+            System.out.println();
+        }
+    }
+
     private static final MessageDigest digest;
 
     static {
