@@ -36,6 +36,15 @@ public class SolutionUtils {
         return numbers.stream().reduce(1L, (a, b) -> a * b / SolutionUtils.gcd(a, b));
     }
 
+    public static boolean isConsecutiveArray(long[] arr) {
+        for (int i = 0; i < arr.length - 1; i++) {
+            if (arr[i] + 1 != arr[i+1]) {
+                return false;
+            }
+        }
+        return true;
+    }
+
     public static void printMatrix(int[][] matrix) {
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
