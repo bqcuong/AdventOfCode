@@ -36,3 +36,5 @@ This repository contains my Java solutions for the [Advent of Code](https://adve
 | 21 | [Step Counter](https://adventofcode.com/2023/day/21)                   |       | [Code](src/main/java/net/bqc/aoc/year2023/Day21.java), [Test](src/test/java/net/bqc/aoc/year2023/Day21Test.java) |
 | 22 | [Sand Slabs](https://adventofcode.com/2023/day/22)                     |       | [Code](src/main/java/net/bqc/aoc/year2023/Day22.java), [Test](src/test/java/net/bqc/aoc/year2023/Day22Test.java) |
 | 23 | [A Long Walk](https://adventofcode.com/2023/day/23)                    |       | [Code](src/main/java/net/bqc/aoc/year2023/Day23.java), [Test](src/test/java/net/bqc/aoc/year2023/Day23Test.java) |
+| 24 | [Never Tell Me The Odds](https://adventofcode.com/2023/day/24)         |       | [Code](src/main/java/net/bqc/aoc/year2023/Day24.java), [Test](src/test/java/net/bqc/aoc/year2023/Day24Test.java) |
+| 25 | [Snowverload](https://adventofcode.com/2023/day/25)                    |       | [Code](src/main/java/net/bqc/aoc/year2023/Day25.java), [Test](src/test/java/net/bqc/aoc/year2023/Day25Test.java) |
