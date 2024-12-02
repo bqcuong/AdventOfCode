@@ -35,7 +35,8 @@ public class DayGenerator {
 
         try {
             // Download the first sample input
-            Document problemDoc = getConnection(String.format("https://adventofcode.com/%s/day/%s", year, day)).get();
+            String dayInURL = day.startsWith("0") ? day.substring(1) : day;
+            Document problemDoc = getConnection(String.format("https://adventofcode.com/%s/day/%s", year, dayInURL)).get();
             Elements sampleInputs = problemDoc.select("pre > code");
 
             assert sampleInputs.size() > 0;
@@ -44,7 +45,7 @@ public class DayGenerator {
             IOUtils.writeFile(String.format("src/test/resources/year%s/Day%s_SampleInput.txt", year, day), sampleInput);
 
             // Download the input
-            Connection con = getConnection(String.format("https://adventofcode.com/%s/day/%s/input", year, day));
+            Connection con = getConnection(String.format("https://adventofcode.com/%s/day/%s/input", year, dayInURL));
             byte[] input = con.execute().bodyAsBytes();
             FileOutputStream out = (new FileOutputStream(new File(String.format("src/test/resources/year%s/Day%s_Input.txt", year, day))));
             out.write(input);
@@ -74,6 +75,6 @@ public class DayGenerator {
     }
 
     public static void main(String[] args) {
-        new DayGenerator("2023", "25");
+        new DayGenerator("2024", "01");
     }
 }
