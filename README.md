@@ -13,7 +13,7 @@ This repository contains my Java solutions for the [Advent of Code](https://adve
 | Day | Task                                                      | Stars | Solutions                                                                                                        |
 |:---:|-----------------------------------------------------------|:------|------------------------------------------------------------------------------------------------------------------|
 | 01  | [Historian Hysteria](https://adventofcode.com/2024/day/1) | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day01.java), [Test](src/test/java/net/bqc/aoc/year2024/Day01Test.java) | 
-| 02  | [](https://adventofcode.com/2024/day/2)                   |       | [Code](src/main/java/net/bqc/aoc/year2024/Day02.java), [Test](src/test/java/net/bqc/aoc/year2024/Day02Test.java) | 
+| 02  | [Red-Nosed Reports](https://adventofcode.com/2024/day/2)  | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day02.java), [Test](src/test/java/net/bqc/aoc/year2024/Day02Test.java) | 
 | 03  | [](https://adventofcode.com/2024/day/3)                   |       | [Code](src/main/java/net/bqc/aoc/year2024/Day03.java), [Test](src/test/java/net/bqc/aoc/year2024/Day03Test.java) | 
 | 04  | [](https://adventofcode.com/2024/day/4)                   |       | [Code](src/main/java/net/bqc/aoc/year2024/Day04.java), [Test](src/test/java/net/bqc/aoc/year2024/Day04Test.java) | 
 | 05  | [](https://adventofcode.com/2024/day/5)                   |       | [Code](src/main/java/net/bqc/aoc/year2024/Day05.java), [Test](src/test/java/net/bqc/aoc/year2024/Day05Test.java) | 
