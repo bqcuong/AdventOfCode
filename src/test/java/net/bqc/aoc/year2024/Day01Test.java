@@ -39,11 +39,11 @@ public class Day01Test extends AbstractTest {
         List<String> sampleInputLines = getSampleInput();
         List<String> inputLines = getInput();
         return Stream.of(
-            Arguments.of(Solution.PART_NUMBER.ONE, sampleInputLines, 0)
-//            Arguments.of(Solution.PART_NUMBER.ONE, inputLines, 0)
+            Arguments.of(Solution.PART_NUMBER.ONE, sampleInputLines, 11),
+            Arguments.of(Solution.PART_NUMBER.ONE, inputLines, 1590491),
             
-//            Arguments.of(Solution.PART_NUMBER.TWO, sampleInputLines, 0),
-//            Arguments.of(Solution.PART_NUMBER.TWO, inputLines, 0)
+            Arguments.of(Solution.PART_NUMBER.TWO, sampleInputLines, 31),
+            Arguments.of(Solution.PART_NUMBER.TWO, inputLines, 22588371)
         );
     }
 }
