@@ -1,4 +1,4 @@
-package net.bqc.aoc.yearABCD;
+package net.bqc.aoc.year2024;
 
 import net.bqc.aoc.AbstractTest;
 import net.bqc.aoc.Solution;
@@ -13,19 +13,19 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class DayXYTest extends AbstractTest {
+public class Day04Test extends AbstractTest {
 
-    private DayXY solution;
+    private Day04 solution;
 
     @BeforeAll
     static void setUp() {
-        INPUT_PATH = "yearABCD/DayXY_Input.txt";
-        SAMPLE_INPUT_PATH = "yearABCD/DayXY_SampleInput.txt";
+        INPUT_PATH = "year2024/Day04_Input.txt";
+        SAMPLE_INPUT_PATH = "year2024/Day04_SampleInput.txt";
     }
 
     @BeforeEach
     void init() {
-        solution = new DayXY();
+        solution = new Day04();
     }
 
     @ParameterizedTest
@@ -39,10 +39,10 @@ public class DayXYTest extends AbstractTest {
         List<String> sampleInputLines = getSampleInput();
         List<String> inputLines = getInput();
         return Stream.of(
-            Arguments.of(Solution.PART_NUMBER.ONE, sampleInputLines, 0),
-            Arguments.of(Solution.PART_NUMBER.ONE, inputLines, 0),
+            Arguments.of(Solution.PART_NUMBER.ONE, sampleInputLines, 18),
+            Arguments.of(Solution.PART_NUMBER.ONE, inputLines, 2496),
             
-            Arguments.of(Solution.PART_NUMBER.TWO, sampleInputLines, 0),
+            Arguments.of(Solution.PART_NUMBER.TWO, sampleInputLines, 9),
             Arguments.of(Solution.PART_NUMBER.TWO, inputLines, 0)
         );
     }

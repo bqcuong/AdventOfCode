@@ -5,9 +5,39 @@ import java.math.MathContext;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class SolutionUtils {
+
+    public static char[][] readAsMatrix(List<String> inputLines) {
+        int m = inputLines.size();
+        int n = inputLines.get(0).length();
+
+        char[][] matrix = new char[m][n];
+
+        for (int row = 0; row < m; row++) {
+            String line = inputLines.get(row);
+            matrix[row] = new char[n];
+            for (int col = 0; col < n; col++) {
+                matrix[row][col] = line.charAt(col);
+            }
+        }
+        return matrix;
+    }
+
+    public static List<Pos> getXPos(char[][] matrix, char x) {
+        List<Pos> posList = new ArrayList<>();
+        for (int i = 0; i < matrix.length; i++) {
+            char[] row = matrix[i];
+            for (int j = 0; j < row.length; j++) {
+                if (row[j] == x) {
+                    posList.add(new Pos(i, j));
+                }
+            }
+        }
+        return posList;
+    }
 
     public static BigDecimal[] solveQuadraticEquation(BigDecimal a, BigDecimal b, BigDecimal c) {
         BigDecimal discriminant = b.pow(2).subtract(new BigDecimal("4").multiply(a).multiply(c));
