@@ -68,3 +68,32 @@ This repository contains my Java solutions for the [Advent of Code](https://adve
 | 23  | [A Long Walk](https://adventofcode.com/2023/day/23)                    |       | [Code](src/main/java/net/bqc/aoc/year2023/Day23.java), [Test](src/test/java/net/bqc/aoc/year2023/Day23Test.java) |
 | 24  | [Never Tell Me The Odds](https://adventofcode.com/2023/day/24)         |       | [Code](src/main/java/net/bqc/aoc/year2023/Day24.java), [Test](src/test/java/net/bqc/aoc/year2023/Day24Test.java) |
 | 25  | [Snowverload](https://adventofcode.com/2023/day/25)                    |       | [Code](src/main/java/net/bqc/aoc/year2023/Day25.java), [Test](src/test/java/net/bqc/aoc/year2023/Day25Test.java) |
+
+## 2022
+| Day | Task                                                             | Stars | Solutions                                                 |
+|:---:|------------------------------------------------------------------|:------|-----------------------------------------------------------|
+| 01  | [Calorie Counting](https://adventofcode.com/2022/day/1)          | ⭐⭐    | [Code](src/main/python/year2022/Day01/main.py), [Test](#) | 
+| 02  | [Rock Paper Scissors](https://adventofcode.com/2022/day/2)       | ⭐⭐    | [Code](src/main/python/year2022/Day02/main.py), [Test](#) | 
+| 03  | [Rucksack Reorganization](https://adventofcode.com/2022/day/3)   | ⭐⭐    | [Code](src/main/python/year2022/Day03/main.py), [Test](#) | 
+| 04  | [Camp Cleanup](https://adventofcode.com/2022/day/4)              | ⭐⭐    | [Code](src/main/python/year2022/Day04/main.py), [Test](#) | 
+| 05  | [Supply Stacks](https://adventofcode.com/2022/day/5)             | ⭐⭐    | [Code](src/main/python/year2022/Day05/main.py), [Test](#) | 
+| 06  | [Tuning Trouble](https://adventofcode.com/2022/day/6)            | ⭐⭐    | [Code](src/main/python/year2022/Day06/main.py), [Test](#) | 
+| 07  | [No Space Left On Device](https://adventofcode.com/2022/day/7)   | ⭐⭐    | [Code](src/main/python/year2022/Day07/main.py), [Test](#) | 
+| 08  | [Treetop Tree House](https://adventofcode.com/2022/day/8)        | ⭐⭐    | [Code](src/main/python/year2022/Day08/main.py), [Test](#) | 
+| 09  | [Rope Bridge](https://adventofcode.com/2022/day/9)               | ⭐⭐    | [Code](src/main/python/year2022/Day09/main.py), [Test](#) | 
+| 10  | [Cathode-Ray Tube](https://adventofcode.com/2022/day/10)         | ⭐⭐    | [Code](src/main/python/year2022/Day10/main.py), [Test](#) | 
+| 11  | [Monkey in the Middle](https://adventofcode.com/2022/day/11)     | ⭐⭐    | [Code](src/main/python/year2022/Day11/main.py), [Test](#) | 
+| 12  | [Hill Climbing Algorithm](https://adventofcode.com/2022/day/12)  | ⭐⭐    | [Code](src/main/python/year2022/Day12/main.py), [Test](#) | 
+| 13  | [Distress Signal](https://adventofcode.com/2022/day/13)          |       | [Code](src/main/python/year2022/Day13/main.py), [Test](#) | 
+| 14  | [Regolith Reservoir](https://adventofcode.com/2022/day/14)       |       | [Code](src/main/python/year2022/Day14/main.py), [Test](#) | 
+| 15  | [Beacon Exclusion Zone](https://adventofcode.com/2022/day/15)    |       | [Code](src/main/python/year2022/Day15/main.py), [Test](#) | 
+| 16  | [Proboscidea Volcanium](https://adventofcode.com/2022/day/16)    |       | [Code](src/main/python/year2022/Day16/main.py), [Test](#) | 
+| 17  | [Pyroclastic Flow](https://adventofcode.com/2022/day/17)         |       | [Code](src/main/python/year2022/Day17/main.py), [Test](#) | 
+| 18  | [Boiling Boulders](https://adventofcode.com/2022/day/18)         |       | [Code](src/main/python/year2022/Day18/main.py), [Test](#) | 
+| 19  | [Not Enough Minerals](https://adventofcode.com/2022/day/19)      |       | [Code](src/main/python/year2022/Day19/main.py), [Test](#) |
+| 20  | [Grove Positioning System](https://adventofcode.com/2022/day/20) |       | [Code](src/main/python/year2022/Day20/main.py), [Test](#) |
+| 21  | [Monkey Math](https://adventofcode.com/2022/day/21)              |       | [Code](src/main/python/year2022/Day21/main.py), [Test](#) |
+| 22  | [Monkey Map](https://adventofcode.com/2022/day/22)               |       | [Code](src/main/python/year2022/Day22/main.py), [Test](#) |
+| 23  | [Unstable Diffusion](https://adventofcode.com/2022/day/23)       |       | [Code](src/main/python/year2022/Day23/main.py), [Test](#) |
+| 24  | [Blizzard Basin](https://adventofcode.com/2022/day/24)           |       | [Code](src/main/python/year2022/Day24/main.py), [Test](#) |
+| 25  | [Full of Hot Air](https://adventofcode.com/2022/day/25)          |       | [Code](src/main/python/year2022/Day25/main.py), [Test](#) |
