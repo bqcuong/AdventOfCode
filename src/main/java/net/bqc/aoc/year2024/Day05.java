@@ -22,9 +22,7 @@ public class Day05 extends Solution {
         }
         else {
             chosenUpdates = this.printUpdates.stream().filter(x -> !this.isValidUpdate(x)).toList();
-            System.out.println(chosenUpdates);
             chosenUpdates.forEach(this::repairUpdate);
-            System.out.println(chosenUpdates);
         }
 
         return chosenUpdates.stream().mapToLong(x -> x.get(x.size()/2)).sum();
