@@ -16,8 +16,8 @@ This repository contains my Java solutions for the [Advent of Code](https://adve
 | 02  | [Red-Nosed Reports](https://adventofcode.com/2024/day/2)  | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day02.java), [Test](src/test/java/net/bqc/aoc/year2024/Day02Test.java) | 
 | 03  | [Mull It Over](https://adventofcode.com/2024/day/3)       | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day03.java), [Test](src/test/java/net/bqc/aoc/year2024/Day03Test.java) | 
 | 04  | [Ceres Search](https://adventofcode.com/2024/day/4)       | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day04.java), [Test](src/test/java/net/bqc/aoc/year2024/Day04Test.java) | 
-| 05  | [](https://adventofcode.com/2024/day/5)                   |       | [Code](src/main/java/net/bqc/aoc/year2024/Day05.java), [Test](src/test/java/net/bqc/aoc/year2024/Day05Test.java) | 
-| 06  | [](https://adventofcode.com/2024/day/6)                   |       | [Code](src/main/java/net/bqc/aoc/year2024/Day06.java), [Test](src/test/java/net/bqc/aoc/year2024/Day06Test.java) | 
+| 05  | [Print Queue](https://adventofcode.com/2024/day/5)        | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day05.java), [Test](src/test/java/net/bqc/aoc/year2024/Day05Test.java) | 
+| 06  | [Guard Gallivant](https://adventofcode.com/2024/day/6)    |       | [Code](src/main/java/net/bqc/aoc/year2024/Day06.java), [Test](src/test/java/net/bqc/aoc/year2024/Day06Test.java) | 
 | 07  | [](https://adventofcode.com/2024/day/7)                   |       | [Code](src/main/java/net/bqc/aoc/year2024/Day07.java), [Test](src/test/java/net/bqc/aoc/year2024/Day07Test.java) | 
 | 08  | [](https://adventofcode.com/2024/day/8)                   |       | [Code](src/main/java/net/bqc/aoc/year2024/Day08.java), [Test](src/test/java/net/bqc/aoc/year2024/Day08Test.java) | 
 | 09  | [](https://adventofcode.com/2024/day/9)                   |       | [Code](src/main/java/net/bqc/aoc/year2024/Day09.java), [Test](src/test/java/net/bqc/aoc/year2024/Day09Test.java) | 
