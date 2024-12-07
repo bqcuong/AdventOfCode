@@ -93,6 +93,23 @@ public class SolutionUtils {
         }
     }
 
+    public static char[][] copyMatrix(char[][] matrix) {
+        char [][] copiedMatrix = new char[matrix.length][];
+        for (int i = 0; i < matrix.length; i++)
+            copiedMatrix[i] = matrix[i].clone();
+        return copiedMatrix;
+    }
+
+    public static int countInMatrix(char[][] matrix, char toCount) {
+        int count = 0;
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                if (matrix[i][j] == toCount) count++;
+            }
+        }
+        return count;
+    }
+
     private static final MessageDigest digest;
 
     static {
