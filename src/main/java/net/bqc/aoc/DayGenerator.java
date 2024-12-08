@@ -75,6 +75,6 @@ public class DayGenerator {
     }
 
     public static void main(String[] args) {
-        new DayGenerator("2024", "06");
+        new DayGenerator("2024", "07");
     }
 }
