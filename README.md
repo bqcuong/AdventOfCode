@@ -9,7 +9,7 @@ This repository contains my Java solutions for the [Advent of Code](https://adve
 * Java 17
 * Maven (a wrapper is provided)
 
-### 2024
+## 2024
 | Day | Task                                                         | Stars | Solutions                                                                                                        |
 |:---:|--------------------------------------------------------------|:------|------------------------------------------------------------------------------------------------------------------|
 | 01  | [Historian Hysteria](https://adventofcode.com/2024/day/1)    | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day01.java), [Test](src/test/java/net/bqc/aoc/year2024/Day01Test.java) | 
@@ -39,7 +39,7 @@ This repository contains my Java solutions for the [Advent of Code](https://adve
 | 25  | [](https://adventofcode.com/2024/day/25)                     |       | [Code](src/main/java/net/bqc/aoc/year2024/Day25.java), [Test](src/test/java/net/bqc/aoc/year2024/Day25Test.java) |
 
 
-### 2023
+## 2023
 
 | Day | Task                                                                   | Stars | Solutions                                                                                                        |
 |:---:|------------------------------------------------------------------------|:------|------------------------------------------------------------------------------------------------------------------|
