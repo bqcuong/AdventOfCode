@@ -9,6 +9,7 @@ import org.jsoup.select.Elements;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Objects;
 import java.util.Properties;
 
 public class DayGenerator {
@@ -37,19 +38,20 @@ public class DayGenerator {
             // Download the first sample input
             String dayInURL = day.startsWith("0") ? day.substring(1) : day;
             Document problemDoc = getConnection(String.format("https://adventofcode.com/%s/day/%s", year, dayInURL)).get();
-            Elements sampleInputs = problemDoc.select("pre > code");
-
-            assert sampleInputs.size() > 0;
-            String sampleInput = sampleInputs.get(0).text();
+            String dayTaskName = Objects.requireNonNull(problemDoc.selectFirst(".day-desc > h2")).text()
+                .replace("---", "").trim();
+            String sampleInput = Objects.requireNonNull(problemDoc.selectFirst("pre > code")).text();
 
             IOUtils.writeFile(String.format("src/test/resources/year%s/Day%s_SampleInput.txt", year, day), sampleInput);
 
             // Download the input
             Connection con = getConnection(String.format("https://adventofcode.com/%s/day/%s/input", year, dayInURL));
             byte[] input = con.execute().bodyAsBytes();
-            FileOutputStream out = (new FileOutputStream(new File(String.format("src/test/resources/year%s/Day%s_Input.txt", year, day))));
+            FileOutputStream out = (new FileOutputStream(String.format("src/test/resources/year%s/Day%s_Input.txt", year, day)));
             out.write(input);
             out.close();
+
+            System.out.printf("Generate boilerplate code for %s\n", dayTaskName);
         }
         catch (IOException e) {
             e.printStackTrace();
@@ -75,6 +77,6 @@ public class DayGenerator {
     }
 
     public static void main(String[] args) {
-        new DayGenerator("2024", "07");
+        new DayGenerator("2024", "08");
     }
 }
