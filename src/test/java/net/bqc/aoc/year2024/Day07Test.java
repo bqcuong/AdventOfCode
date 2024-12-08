@@ -43,7 +43,7 @@ public class Day07Test extends AbstractTest {
             Arguments.of(Solution.PART_NUMBER.ONE, inputLines, 42283209483350L),
             
             Arguments.of(Solution.PART_NUMBER.TWO, sampleInputLines, 11387),
-            Arguments.of(Solution.PART_NUMBER.TWO, inputLines, 0)
+            Arguments.of(Solution.PART_NUMBER.TWO, inputLines, 1026766857276279L)
         );
     }
 }
