@@ -19,7 +19,7 @@ This repository contains my Java solutions for the [Advent of Code](https://adve
 | 05  | [Print Queue](https://adventofcode.com/2024/day/5)           | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day05.java), [Test](src/test/java/net/bqc/aoc/year2024/Day05Test.java) | 
 | 06  | [Guard Gallivant](https://adventofcode.com/2024/day/6)       | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day06.java), [Test](src/test/java/net/bqc/aoc/year2024/Day06Test.java) | 
 | 07  | [Bridge Repair](https://adventofcode.com/2024/day/7)         | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day07.java), [Test](src/test/java/net/bqc/aoc/year2024/Day07Test.java) | 
-| 08  | [Resonant Collinearity](https://adventofcode.com/2024/day/8) |       | [Code](src/main/java/net/bqc/aoc/year2024/Day08.java), [Test](src/test/java/net/bqc/aoc/year2024/Day08Test.java) | 
+| 08  | [Resonant Collinearity](https://adventofcode.com/2024/day/8) | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day08.java), [Test](src/test/java/net/bqc/aoc/year2024/Day08Test.java) | 
 | 09  | [](https://adventofcode.com/2024/day/9)                      |       | [Code](src/main/java/net/bqc/aoc/year2024/Day09.java), [Test](src/test/java/net/bqc/aoc/year2024/Day09Test.java) | 
 | 10  | [](https://adventofcode.com/2024/day/10)                     |       | [Code](src/main/java/net/bqc/aoc/year2024/Day10.java), [Test](src/test/java/net/bqc/aoc/year2024/Day10Test.java) | 
 | 11  | [](https://adventofcode.com/2024/day/11)                     |       | [Code](src/main/java/net/bqc/aoc/year2024/Day11.java), [Test](src/test/java/net/bqc/aoc/year2024/Day11Test.java) | 

@@ -6,7 +6,9 @@ import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class SolutionUtils {
 
@@ -22,6 +24,34 @@ public class SolutionUtils {
             for (int col = 0; col < n; col++) {
                 matrix[row][col] = line.charAt(col);
             }
+        }
+        return matrix;
+    }
+
+    public static Set<Character> getUniqueElements(char[][] matrix) {
+        Set<Character> uniqueElements = new HashSet<>();
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                uniqueElements.add(matrix[i][j]);
+            }
+        }
+        return uniqueElements;
+    }
+
+    public static long sum(int[][] matrix) {
+        long sum = 0;
+        for (int[] ints : matrix) {
+            for (int anInt : ints) {
+                sum += anInt;
+            }
+        }
+        return sum;
+    }
+
+    public static int[][] generateMatrix(int m, int n) {
+        int[][] matrix = new int[m][n];
+        for (int row = 0; row < m; row++) {
+            matrix[row] = new int[n];
         }
         return matrix;
     }
