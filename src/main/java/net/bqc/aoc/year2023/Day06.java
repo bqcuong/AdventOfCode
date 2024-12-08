@@ -21,7 +21,7 @@ public class Day06 extends Solution {
         List<BigDecimal> distanceRecords = Arrays.stream(inputLines.get(1).split(":")[1].trim().split("\s+"))
             .map(BigDecimal::new).toList();
 
-        if (this.pup == PART_NUMBER.ONE) {
+        if (!isPart2()) {
             return IntStream.range(0, timeAmounts.size())
                 .mapToObj(i -> countStrategies(timeAmounts.get(i), distanceRecords.get(i)))
                 .reduce(BigInteger.ONE, BigInteger::multiply);

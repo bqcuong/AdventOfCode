@@ -25,10 +25,10 @@ public class Day03 extends Solution {
 
                 if (ch != '.' && !Character.isDigit(ch)) {
                     List<Long> partNumbers = findNearbyNumbers(matrix, m, n, row, col);
-                    if (this.pup == PART_NUMBER.ONE) {
+                    if (!isPart2()) {
                         sum += partNumbers.stream().mapToLong(Long::intValue).sum();
                     }
-                    else if (this.pup == PART_NUMBER.TWO && ch == '*' && partNumbers.size() == 2) {
+                    else if (isPart2() && ch == '*' && partNumbers.size() == 2) {
                         sum += partNumbers.get(0) * partNumbers.get(1);
                     }
                 }

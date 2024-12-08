@@ -69,12 +69,12 @@ public class Day05 extends Solution {
 
         Problem p = parseProblem(inputLines);
 
-        if (this.pup == PART_NUMBER.ONE) {
+        if (!isPart2()) {
             return p.seeds.stream().map(p::getMappedValueInAllMaps)
                 .min(BigInteger::compareTo)
                 .orElse(BigInteger.ZERO);
         }
-        else if (this.pup == PART_NUMBER.TWO) {
+        else if (isPart2()) {
             BigInteger min = null;
             int i = 0 ;
             while (i < p.seeds.size()) {

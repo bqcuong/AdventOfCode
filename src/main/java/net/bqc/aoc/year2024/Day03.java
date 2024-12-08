@@ -43,7 +43,7 @@ public class Day03 extends Solution {
                 enableInstruction = true;
                 continue;
             }
-            if (this.pup == PART_NUMBER.ONE || enableInstruction) instructions.add(matched);
+            if (!isPart2() || enableInstruction) instructions.add(matched);
         }
         return instructions;
     }

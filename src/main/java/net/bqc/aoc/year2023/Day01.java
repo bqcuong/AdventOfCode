@@ -28,7 +28,7 @@ public class Day01 extends Solution {
         }
 
         // Additional computation for Part 2
-        if (this.pup == PART_NUMBER.TWO) {
+        if (isPart2()) {
             String subStr = line.substring(pos);
             for (String key : NUM_MAP.keySet()) {
                 if (subStr.startsWith(key)) {

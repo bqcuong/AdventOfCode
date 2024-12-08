@@ -68,7 +68,7 @@ public class Day18 extends Solution {
             int steps = Integer.parseInt(parts[1]);
             String color = parts[2].replaceAll("[()#]", "");
 
-            if (this.pup == PART_NUMBER.TWO) {
+            if (isPart2()) {
                 direction = Direction.findByIndex(color.substring(color.length() - 1));
                 steps = Integer.parseInt(color.substring(0, color.length() - 1), 16);
             }

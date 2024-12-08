@@ -35,7 +35,7 @@ public class Day07 extends Solution {
         long nextNum = eq.numbers.get(idx + 1);
         if (idx >= 0) {
             if (tryEquation(eq, idx + 1, sum * nextNum)) return true;
-            if (this.pup == PART_NUMBER.TWO && tryEquation(eq, idx + 1, Long.parseLong(sum + String.valueOf(nextNum)))) return true;
+            if (isPart2() && tryEquation(eq, idx + 1, Long.parseLong(sum + String.valueOf(nextNum)))) return true;
         }
         return tryEquation(eq, idx + 1, sum + eq.numbers.get(idx + 1));
     }

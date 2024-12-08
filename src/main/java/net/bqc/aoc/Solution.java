@@ -12,4 +12,8 @@ public abstract class Solution {
     protected PART_NUMBER pup = PART_NUMBER.ONE;
 
     public abstract long solve(PART_NUMBER part, List<String> inputLines);
+    
+    public boolean isPart2() {
+        return this.pup == PART_NUMBER.TWO;
+    }
 }

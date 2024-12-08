@@ -33,7 +33,7 @@ public class Day07 extends Solution {
                 case 'K' -> this.rank = 13;
                 case 'Q' -> this.rank = 12;
                 case 'J' -> {
-                    if (Day07.this.pup == PART_NUMBER.ONE) {
+                    if (!Day07.this.isPart2()) {
                         this.rank = 11;
                     }
                     else {
@@ -77,7 +77,7 @@ public class Day07 extends Solution {
 
             this.type = parseHandType(this.cards);
 
-            if (Day07.this.pup == PART_NUMBER.TWO) {
+            if (Day07.this.isPart2()) {
                 Card j = new Card('J');
                 Set<Card> uniqueCards = new HashSet<>(this.cards);
 

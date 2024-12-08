@@ -29,7 +29,7 @@ public class Day04 extends Solution {
     public long solve(PART_NUMBER part, List<String> inputLines) {
         this.pup = part;
 
-        if (this.pup == PART_NUMBER.ONE) {
+        if (!isPart2()) {
             return inputLines.stream().mapToLong(x -> parseCardPoint(x).winningPoints).sum();
         }
         else {

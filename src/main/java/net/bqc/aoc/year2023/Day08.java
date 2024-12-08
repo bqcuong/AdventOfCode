@@ -19,7 +19,7 @@ public class Day08 extends Solution {
 
         Problem p = parseProblem(inputLines);
 
-        if (this.pup == PART_NUMBER.ONE) {
+        if (!isPart2()) {
             return travelInMaps(p, "AAA");
         }
         else {
@@ -37,11 +37,11 @@ public class Day08 extends Solution {
     }
 
     private boolean checkEndNode(String node) {
-        if (this.pup == PART_NUMBER.ONE && node.equals("ZZZ")) {
+        if (!isPart2() && node.equals("ZZZ")) {
             return true;
         }
 
-        return this.pup == PART_NUMBER.TWO && node.endsWith("Z");
+        return isPart2() && node.endsWith("Z");
     }
 
     public long travelInMaps(Problem p, String startLoc) {

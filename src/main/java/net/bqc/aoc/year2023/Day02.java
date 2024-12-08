@@ -24,7 +24,7 @@ public class Day02 extends Solution {
     public long solve(PART_NUMBER part, List<String> inputLines) {
         this.pup = part;
 
-        if (this.pup == PART_NUMBER.ONE) {
+        if (!isPart2()) {
             return inputLines.stream().mapToLong(this::checkGamePossible).filter(x -> x > 0).sum();
         }
         else {
