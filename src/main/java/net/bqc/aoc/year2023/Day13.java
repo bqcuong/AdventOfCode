@@ -14,7 +14,7 @@ public class Day13 extends Solution {
 
     @Override
     public long solve(PART_NUMBER part, List<String> inputLines) {
-        this.pup = part;
+        super.solve(part, inputLines);
         List<int[][]> mirrors = parseMirrors(inputLines);
         return summarize(mirrors, part == PART_NUMBER.ONE ? 0 : 1);
     }

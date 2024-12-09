@@ -11,7 +11,7 @@ public class Day02 extends Solution {
 
     @Override
     public long solve(PART_NUMBER part, List<String> inputLines) {
-        this.pup = part;
+        super.solve(part, inputLines);
 
         if (part == PART_NUMBER.ONE) return inputLines.stream().filter(this::isSafe).count();
         return inputLines.stream().filter(this::isSafeWithDampener).count();

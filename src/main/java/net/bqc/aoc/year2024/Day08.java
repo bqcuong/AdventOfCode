@@ -11,7 +11,7 @@ public class Day08 extends Solution {
 
     @Override
     public long solve(PART_NUMBER part, List<String> inputLines) {
-        this.pup = part;
+        super.solve(part, inputLines);
 
         this.antennas = SolutionUtils.readAsMatrix(inputLines);
         int[][] antinodes = generateAntinodes();

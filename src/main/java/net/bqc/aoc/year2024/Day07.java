@@ -22,7 +22,7 @@ public class Day07 extends Solution {
 
     @Override
     public long solve(PART_NUMBER part, List<String> inputLines) {
-        this.pup = part;
+        super.solve(part, inputLines);
         readEquations(inputLines);
         return equations.stream().filter(e -> this.tryEquation(e, -1, 0)).mapToLong(e -> e.testValue).sum();
     }

@@ -27,7 +27,7 @@ public class Day04 extends Solution {
 
     @Override
     public long solve(PART_NUMBER part, List<String> inputLines) {
-        this.pup = part;
+        super.solve(part, inputLines);
 
         if (!isPart2()) {
             return inputLines.stream().mapToLong(x -> parseCardPoint(x).winningPoints).sum();

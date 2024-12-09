@@ -30,7 +30,7 @@ public class Day20 extends Solution {
 
     @Override
     public long solve(PART_NUMBER part, List<String> inputLines) {
-        this.pup = part;
+        super.solve(part, inputLines);
         return 0;
     }
 }

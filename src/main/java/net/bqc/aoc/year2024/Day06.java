@@ -53,7 +53,7 @@ public class Day06 extends Solution {
 
     @Override
     public long solve(PART_NUMBER part, List<String> inputLines) {
-        this.pup = part;
+        super.solve(part, inputLines);
         this.matrix = SolutionUtils.readAsMatrix(inputLines);
         Pair<Pos, Direction> start = findStartingPos(matrix);
 

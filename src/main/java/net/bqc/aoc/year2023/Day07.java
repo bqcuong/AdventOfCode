@@ -180,7 +180,7 @@ public class Day07 extends Solution {
 
     @Override
     public long solve(PART_NUMBER part, List<String> inputLines) {
-        this.pup = part;
+        super.solve(part, inputLines);
 
         List<CardHand> cardHands = new ArrayList<>(inputLines.stream()
             .map(x -> new CardHand(x.split("\s+")[0], Long.parseLong(x.split("\s+")[1])))

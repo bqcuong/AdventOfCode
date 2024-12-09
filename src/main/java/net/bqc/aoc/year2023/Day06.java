@@ -14,7 +14,7 @@ import java.util.stream.IntStream;
 public class Day06 extends Solution {
 
     public BigInteger solve2(PART_NUMBER part, List<String> inputLines) {
-        this.pup = part;
+        super.solve(part, inputLines);
         List<BigDecimal> timeAmounts = Arrays.stream(inputLines.get(0).split(":")[1].trim().split("\s+"))
             .map(BigDecimal::new).toList();
 

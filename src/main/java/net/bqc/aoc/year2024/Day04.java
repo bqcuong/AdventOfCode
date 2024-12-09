@@ -10,7 +10,7 @@ public class Day04 extends Solution {
 
     @Override
     public long solve(PART_NUMBER part, List<String> inputLines) {
-        this.pup = part;
+        super.solve(part, inputLines);
 
         char[][] matrix = SolutionUtils.readAsMatrix(inputLines);
 

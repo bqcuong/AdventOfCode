@@ -12,7 +12,7 @@ public class Day03 extends Solution {
 
     @Override
     public long solve(PART_NUMBER part, List<String> inputLines) {
-        this.pup = part;
+        super.solve(part, inputLines);
 
         final String mulRegex = "mul\\(\\d+,\\d+\\)|(don't\\(\\))|(do\\(\\))";
         String line = String.join("", inputLines);

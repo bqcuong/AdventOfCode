@@ -11,7 +11,10 @@ public abstract class Solution {
     // Part Under Processing
     protected PART_NUMBER pup = PART_NUMBER.ONE;
 
-    public abstract long solve(PART_NUMBER part, List<String> inputLines);
+    public long solve(PART_NUMBER part, List<String> inputLines) {
+        this.pup = part;
+        return 0;
+    }
     
     public boolean isPart2() {
         return this.pup == PART_NUMBER.TWO;

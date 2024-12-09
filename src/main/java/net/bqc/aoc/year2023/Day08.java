@@ -15,7 +15,7 @@ public class Day08 extends Solution {
 
     @Override
     public long solve(PART_NUMBER part, List<String> inputLines) {
-        this.pup = part;
+        super.solve(part, inputLines);
 
         Problem p = parseProblem(inputLines);
 

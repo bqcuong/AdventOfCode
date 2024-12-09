@@ -65,7 +65,7 @@ public class Day05 extends Solution {
     }
 
     public BigInteger solve2(PART_NUMBER part, List<String> inputLines) {
-        this.pup = part;
+        super.solve(part, inputLines);
 
         Problem p = parseProblem(inputLines);
 

@@ -143,7 +143,7 @@ public class Day17 extends Solution {
 
     @Override
     public long solve(PART_NUMBER part, List<String> inputLines) {
-        this.pup = part;
+        super.solve(part, inputLines);
 
         Graph graph = constructGraph(inputLines);
         return part == PART_NUMBER.ONE ? graph.minCost(0, 3) : graph.minCost(4, 10);
