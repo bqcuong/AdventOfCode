@@ -104,6 +104,10 @@ public class DayGenerator {
     }
 
     public static void main(String[] args) {
-        new DayGenerator("2024", "08");
+        if (args.length != 2) {
+            System.out.println("Usage DayGenerator -Dexec.args='<year> <day>'");
+            System.exit(1);
+        }
+        new DayGenerator(args[0], args[1]);
     }
 }
