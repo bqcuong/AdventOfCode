@@ -47,9 +47,6 @@ public class Day09 extends Solution {
 
             while (movingSize > 0) {
                 checkSum += (long) fileId * globalId; // adding into the checksum the moved file block
-                if (globalId == 11) {
-                    System.out.println();
-                }
                 globalId++;
                 movingSize--;
                 fileBlocks[fileId]--;
