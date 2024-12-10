@@ -11,7 +11,7 @@ public class Day11 extends Solution {
     private final List<Integer> emptyCols = new ArrayList<>();
 
     @Override
-    public long solve(PART_NUMBER part, List<String> inputLines) {
+    public long solve(Part part, List<String> inputLines) {
         int[][] space = parseSpace(inputLines);
         List<int[]> galaxies = findGalaxies(space);
         return computeTotalDistance(galaxies, !isPart2() ? 2 : 1000000);

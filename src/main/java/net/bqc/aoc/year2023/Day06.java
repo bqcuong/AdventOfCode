@@ -13,7 +13,7 @@ import java.util.stream.IntStream;
 
 public class Day06 extends Solution {
 
-    public BigInteger solve2(PART_NUMBER part, List<String> inputLines) {
+    public BigInteger solve2(Part part, List<String> inputLines) {
         super.solve(part, inputLines);
         List<BigDecimal> timeAmounts = Arrays.stream(inputLines.get(0).split(":")[1].trim().split("\s+"))
             .map(BigDecimal::new).toList();
@@ -41,7 +41,7 @@ public class Day06 extends Solution {
     }
 
     @Override
-    public long solve(PART_NUMBER part, List<String> inputLines) {
+    public long solve(Part part, List<String> inputLines) {
         return 0;
     }
 }

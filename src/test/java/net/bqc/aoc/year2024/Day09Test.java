@@ -2,15 +2,12 @@ package net.bqc.aoc.year2024;
 
 import net.bqc.aoc.AbstractTest;
 import net.bqc.aoc.Solution;
-import net.bqc.aoc.year2023.Day05;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
-import java.math.BigInteger;
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -33,21 +30,21 @@ public class Day09Test extends AbstractTest {
 
     @ParameterizedTest
     @MethodSource("inputDataSource")
-    void testSolver(Solution.PART_NUMBER part, List<String> inputLines, long expectedSum) {
+    void testSolver(Solution.Part part, List<String> inputLines, long expectedSum) {
         long computedSum = solution.solve(part, inputLines);
         assertEquals(expectedSum, computedSum);
     }
 
     @ParameterizedTest
     @MethodSource("sampleDataSource")
-    void testSolver_2(Solution.PART_NUMBER part, List<String> sampleInputLines, long expected) {
+    void testSolver_2(Solution.Part part, List<String> sampleInputLines, long expected) {
         long computedSum = solution.solve(part, sampleInputLines);
         assertEquals(expected, computedSum);
     }
 
     static Stream<Arguments> sampleDataSource() {
         return Stream.of(
-            Arguments.of(Solution.PART_NUMBER.ONE, List.of("12345"), 60)
+            Arguments.of(Solution.Part.ONE, List.of("12345"), 60)
         );
     }
 
@@ -55,11 +52,11 @@ public class Day09Test extends AbstractTest {
         List<String> sampleInputLines = getSampleInput();
         List<String> inputLines = getInput();
         return Stream.of(
-            Arguments.of(Solution.PART_NUMBER.ONE, sampleInputLines, 1928),
-            Arguments.of(Solution.PART_NUMBER.ONE, inputLines, 6367087064415L),
+            Arguments.of(Solution.Part.ONE, sampleInputLines, 1928),
+            Arguments.of(Solution.Part.ONE, inputLines, 6367087064415L),
             
-            Arguments.of(Solution.PART_NUMBER.TWO, sampleInputLines, 2858),
-            Arguments.of(Solution.PART_NUMBER.TWO, inputLines, 6390781891880L)
+            Arguments.of(Solution.Part.TWO, sampleInputLines, 2858),
+            Arguments.of(Solution.Part.TWO, inputLines, 6390781891880L)
         );
     }
 }

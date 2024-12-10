@@ -43,7 +43,7 @@ public class Day16 extends Solution {
 
     private int[][] visitedPoints;
     @Override
-    public long solve(PART_NUMBER part, List<String> inputLines) {
+    public long solve(Part part, List<String> inputLines) {
         super.solve(part, inputLines);
 
         char[][] map = parseMap(inputLines);

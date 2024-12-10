@@ -26,7 +26,7 @@ public class Day10 extends Solution {
     private List<int[]> visitedPoints;
 
     @Override
-    public long solve(PART_NUMBER part, List<String> inputLines) {
+    public long solve(Part part, List<String> inputLines) {
         int m = inputLines.size();
         int n = inputLines.get(0).length();
         char[][] matrix = new char[m][n];

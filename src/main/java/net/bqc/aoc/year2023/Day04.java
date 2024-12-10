@@ -26,7 +26,7 @@ public class Day04 extends Solution {
     }
 
     @Override
-    public long solve(PART_NUMBER part, List<String> inputLines) {
+    public long solve(Part part, List<String> inputLines) {
         super.solve(part, inputLines);
 
         if (!isPart2()) {

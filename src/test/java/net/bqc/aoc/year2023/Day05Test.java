@@ -31,7 +31,7 @@ public class Day05Test extends AbstractTest {
 
     @ParameterizedTest
     @MethodSource("inputDataSource")
-    void testSolver(Solution.PART_NUMBER part, List<String> inputLines, BigInteger expectedSum) {
+    void testSolver(Solution.Part part, List<String> inputLines, BigInteger expectedSum) {
         BigInteger computedSum = solution.solve2(part, inputLines);
         assertEquals(expectedSum, computedSum);
     }
@@ -58,10 +58,10 @@ public class Day05Test extends AbstractTest {
         List<String> sampleInputLines = getSampleInput();
         List<String> inputLines = getInput();
         return Stream.of(
-            Arguments.of(Solution.PART_NUMBER.ONE, sampleInputLines, new BigInteger("35")),
+            Arguments.of(Solution.Part.ONE, sampleInputLines, new BigInteger("35")),
 //            Arguments.of(Solution.PART_NUMBER.TWO, sampleInputLines, new BigInteger("46"))
 //
-            Arguments.of(Solution.PART_NUMBER.ONE, inputLines, new BigInteger("825516882"))
+            Arguments.of(Solution.Part.ONE, inputLines, new BigInteger("825516882"))
 //            Arguments.of(Solution.PART_NUMBER.TWO, inputLines, new BigInteger("35"))
         );
     }

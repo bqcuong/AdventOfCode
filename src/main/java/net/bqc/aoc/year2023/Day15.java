@@ -17,7 +17,7 @@ public class Day15 extends Solution {
     }
 
     @Override
-    public long solve(PART_NUMBER part, List<String> inputLines) {
+    public long solve(Part part, List<String> inputLines) {
         super.solve(part, inputLines);
 
         String[] texts = inputLines.get(0).split(",");

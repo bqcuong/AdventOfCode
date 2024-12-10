@@ -81,7 +81,7 @@ public class Day19 extends Solution {
     List<Configuration> configs = new ArrayList<>();
 
     @Override
-    public long solve(PART_NUMBER part, List<String> inputLines) {
+    public long solve(Part part, List<String> inputLines) {
         super.solve(part, inputLines);
 
         parseMachineAndConfiguration(inputLines);

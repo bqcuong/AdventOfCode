@@ -60,11 +60,11 @@ public class Day05 extends Solution {
     }
 
     @Override
-    public long solve(PART_NUMBER part, List<String> inputLines) {
+    public long solve(Part part, List<String> inputLines) {
         return 0;
     }
 
-    public BigInteger solve2(PART_NUMBER part, List<String> inputLines) {
+    public BigInteger solve2(Part part, List<String> inputLines) {
         super.solve(part, inputLines);
 
         Problem p = parseProblem(inputLines);

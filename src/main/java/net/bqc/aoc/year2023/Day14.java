@@ -19,7 +19,7 @@ public class Day14 extends Solution {
     private final int DOT = 0;
 
     @Override
-    public long solve(PART_NUMBER part, List<String> inputLines) {
+    public long solve(Part part, List<String> inputLines) {
         super.solve(part, inputLines);
 
         int[][] space = parseSpace(inputLines);

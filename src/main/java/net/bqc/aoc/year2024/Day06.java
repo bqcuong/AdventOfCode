@@ -52,7 +52,7 @@ public class Day06 extends Solution {
     private int loopCount = 0;
 
     @Override
-    public long solve(PART_NUMBER part, List<String> inputLines) {
+    public long solve(Part part, List<String> inputLines) {
         super.solve(part, inputLines);
         this.matrix = Array2DUtils.readAsMatrix(inputLines);
         Pair<Pos, Direction> start = findStartingPos(matrix);

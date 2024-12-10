@@ -40,7 +40,7 @@ public class Day18 extends Solution {
     private final List<int[]> visitedPoints = new ArrayList<>();
 
     @Override
-    public long solve(PART_NUMBER part, List<String> inputLines) {
+    public long solve(Part part, List<String> inputLines) {
         super.solve(part, inputLines);
 
         long totalVisitedPoints = traversal(inputLines);

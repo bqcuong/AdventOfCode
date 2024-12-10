@@ -10,7 +10,7 @@ public class Day08 extends Solution {
     private char[][] antennas;
 
     @Override
-    public long solve(PART_NUMBER part, List<String> inputLines) {
+    public long solve(Part part, List<String> inputLines) {
         super.solve(part, inputLines);
 
         this.antennas = Array2DUtils.readAsMatrix(inputLines);

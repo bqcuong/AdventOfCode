@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
 public class Day03 extends Solution {
 
     @Override
-    public long solve(PART_NUMBER part, List<String> inputLines) {
+    public long solve(Part part, List<String> inputLines) {
         super.solve(part, inputLines);
 
         final String mulRegex = "mul\\(\\d+,\\d+\\)|(don't\\(\\))|(do\\(\\))";

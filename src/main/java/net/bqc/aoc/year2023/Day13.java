@@ -13,7 +13,7 @@ public class Day13 extends Solution {
     private final int ASH = 0;
 
     @Override
-    public long solve(PART_NUMBER part, List<String> inputLines) {
+    public long solve(Part part, List<String> inputLines) {
         super.solve(part, inputLines);
         List<int[][]> mirrors = parseMirrors(inputLines);
         return summarize(mirrors, !isPart2() ? 0 : 1);

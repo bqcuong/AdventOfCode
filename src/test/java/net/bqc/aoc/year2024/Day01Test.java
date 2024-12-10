@@ -30,7 +30,7 @@ public class Day01Test extends AbstractTest {
 
     @ParameterizedTest
     @MethodSource("inputDataSource")
-    void testSolver(Solution.PART_NUMBER part, List<String> inputLines, long expectedSum) {
+    void testSolver(Solution.Part part, List<String> inputLines, long expectedSum) {
         long computedSum = solution.solve(part, inputLines);
         assertEquals(expectedSum, computedSum);
     }
@@ -39,11 +39,11 @@ public class Day01Test extends AbstractTest {
         List<String> sampleInputLines = getSampleInput();
         List<String> inputLines = getInput();
         return Stream.of(
-            Arguments.of(Solution.PART_NUMBER.ONE, sampleInputLines, 11),
-            Arguments.of(Solution.PART_NUMBER.ONE, inputLines, 1590491),
+            Arguments.of(Solution.Part.ONE, sampleInputLines, 11),
+            Arguments.of(Solution.Part.ONE, inputLines, 1590491),
             
-            Arguments.of(Solution.PART_NUMBER.TWO, sampleInputLines, 31),
-            Arguments.of(Solution.PART_NUMBER.TWO, inputLines, 22588371)
+            Arguments.of(Solution.Part.TWO, sampleInputLines, 31),
+            Arguments.of(Solution.Part.TWO, inputLines, 22588371)
         );
     }
 }

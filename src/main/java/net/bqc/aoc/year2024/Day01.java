@@ -10,7 +10,7 @@ import java.util.Map;
 public class Day01 extends Solution {
 
     @Override
-    public long solve(PART_NUMBER part, List<String> inputLines) {
+    public long solve(Part part, List<String> inputLines) {
         int[] list1 = new int[inputLines.size()];
         int[] list2 = new int[inputLines.size()];
         Map<Integer, Integer> map = new HashMap<>();
