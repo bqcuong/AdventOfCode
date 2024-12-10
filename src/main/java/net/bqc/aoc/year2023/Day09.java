@@ -11,6 +11,7 @@ public class Day09 extends Solution {
 
     @Override
     public long solve(Part part, List<String> inputLines) {
+        super.solve(part, inputLines);
         List<List<Long>> histories = inputLines.stream()
             .map(l -> Arrays.stream(l.split("\s")).map(Long::parseLong).toList())
             .toList();

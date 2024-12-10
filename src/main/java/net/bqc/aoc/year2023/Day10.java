@@ -27,6 +27,7 @@ public class Day10 extends Solution {
 
     @Override
     public long solve(Part part, List<String> inputLines) {
+        super.solve(part, inputLines);
         int m = inputLines.size();
         int n = inputLines.get(0).length();
         char[][] matrix = new char[m][n];

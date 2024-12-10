@@ -11,6 +11,7 @@ public class Day01 extends Solution {
 
     @Override
     public long solve(Part part, List<String> inputLines) {
+        super.solve(part, inputLines);
         int[] list1 = new int[inputLines.size()];
         int[] list2 = new int[inputLines.size()];
         Map<Integer, Integer> map = new HashMap<>();
