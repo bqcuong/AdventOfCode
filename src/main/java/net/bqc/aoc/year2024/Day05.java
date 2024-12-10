@@ -17,7 +17,7 @@ public class Day05 extends Solution {
 
         List<List<Integer>> chosenUpdates;
 
-        if (part == PART_NUMBER.ONE) {
+        if (!isPart2()) {
             chosenUpdates = this.printUpdates.stream().filter(this::isValidUpdate).toList();
         }
         else {

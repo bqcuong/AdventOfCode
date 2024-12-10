@@ -1,7 +1,7 @@
 package net.bqc.aoc.year2023;
 
 import net.bqc.aoc.Solution;
-import net.bqc.aoc.utils.SolutionUtils;
+import net.bqc.aoc.utils.MathUtils;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
@@ -34,7 +34,7 @@ public class Day06 extends Solution {
     }
 
     public BigInteger countStrategies(BigDecimal time, BigDecimal distance) {
-        BigDecimal[] roots = SolutionUtils.solveQuadraticEquation(BigDecimal.ONE, time.negate(), distance);
+        BigDecimal[] roots = MathUtils.solveQuadraticEquation(BigDecimal.ONE, time.negate(), distance);
         BigDecimal start = roots[0].add(BigDecimal.ONE).setScale(0, RoundingMode.FLOOR);
         BigDecimal end = roots[1].subtract(BigDecimal.ONE).setScale(0, RoundingMode.CEILING);
         return end.subtract(start).add(BigDecimal.ONE).toBigInteger();

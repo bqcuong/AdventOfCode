@@ -1,7 +1,7 @@
 package net.bqc.aoc.year2023;
 
 import net.bqc.aoc.Solution;
-import net.bqc.aoc.utils.SolutionUtils;
+import net.bqc.aoc.utils.Array2DUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +15,7 @@ public class Day03 extends Solution {
         int m = inputLines.size();
         int n = inputLines.get(0).length();
 
-        char[][] matrix = SolutionUtils.readAsMatrix(inputLines);
+        char[][] matrix = Array2DUtils.readAsMatrix(inputLines);
 
         long sum = 0;
         for (int row = 0; row < m; row++) {

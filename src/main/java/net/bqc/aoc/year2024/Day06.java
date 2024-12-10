@@ -1,9 +1,9 @@
 package net.bqc.aoc.year2024;
 
 import net.bqc.aoc.Solution;
+import net.bqc.aoc.utils.Array2DUtils;
 import net.bqc.aoc.utils.Pair;
 import net.bqc.aoc.utils.Pos;
-import net.bqc.aoc.utils.SolutionUtils;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -54,12 +54,12 @@ public class Day06 extends Solution {
     @Override
     public long solve(PART_NUMBER part, List<String> inputLines) {
         super.solve(part, inputLines);
-        this.matrix = SolutionUtils.readAsMatrix(inputLines);
+        this.matrix = Array2DUtils.readAsMatrix(inputLines);
         Pair<Pos, Direction> start = findStartingPos(matrix);
 
         patrol(start.first, start.second);
 
-        return part == PART_NUMBER.ONE ? SolutionUtils.countInMatrix(matrix, 'X') : loopCount;
+        return !isPart2() ? Array2DUtils.countInMatrix(matrix, 'X') : loopCount;
     }
 
     private void patrol(Pos pos, Direction direction) {
@@ -78,7 +78,7 @@ public class Day06 extends Solution {
             }
             else {
                 if (matrix[newX][newY] == '.') {
-                    char[][] tmpMatrix = SolutionUtils.copyMatrix(matrix);
+                    char[][] tmpMatrix = Array2DUtils.copyMatrix(matrix);
                     tmpMatrix[newX][newY] = 'O';
                     if (checkLoop(tmpMatrix, new HashSet<>(visited), pos, direction)) {
 //                        System.out.printf("%d,%d %s\n", pos.x, pos.y, direction.symbol);

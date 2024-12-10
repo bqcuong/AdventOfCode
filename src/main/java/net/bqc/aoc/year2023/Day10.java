@@ -43,7 +43,7 @@ public class Day10 extends Solution {
 
         long steps = traversal(matrix, startPos) / 2;
 
-        if (part == PART_NUMBER.TWO) {
+        if (isPart2()) {
             // Use Shoelace's theorem to compute the area of polygon:
             // A = 1/2(x1y2 + x2y3 + ... + xny1) - (y1x2 + y2x3 + ... + x1yn)
             // The area of the polygon can also be computed with Rick's theorem

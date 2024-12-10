@@ -14,7 +14,7 @@ public class Day11 extends Solution {
     public long solve(PART_NUMBER part, List<String> inputLines) {
         int[][] space = parseSpace(inputLines);
         List<int[]> galaxies = findGalaxies(space);
-        return computeTotalDistance(galaxies, part == PART_NUMBER.ONE ? 2 : 1000000);
+        return computeTotalDistance(galaxies, !isPart2() ? 2 : 1000000);
     }
 
     private long computeTotalDistance(List<int[]> galaxies, int expansionRatio) {

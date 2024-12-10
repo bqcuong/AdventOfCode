@@ -146,7 +146,7 @@ public class Day17 extends Solution {
         super.solve(part, inputLines);
 
         Graph graph = constructGraph(inputLines);
-        return part == PART_NUMBER.ONE ? graph.minCost(0, 3) : graph.minCost(4, 10);
+        return !isPart2() ? graph.minCost(0, 3) : graph.minCost(4, 10);
     }
 
     private Graph constructGraph(List<String> inputLines) {

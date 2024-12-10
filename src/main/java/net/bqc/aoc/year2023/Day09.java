@@ -15,7 +15,7 @@ public class Day09 extends Solution {
             .map(l -> Arrays.stream(l.split("\s")).map(Long::parseLong).toList())
             .toList();
 
-        if (part == PART_NUMBER.ONE) {
+        if (!isPart2()) {
             return histories.stream().mapToLong(this::predict).sum();
         }
         else {

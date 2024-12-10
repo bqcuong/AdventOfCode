@@ -22,7 +22,7 @@ public class Day15 extends Solution {
 
         String[] texts = inputLines.get(0).split(",");
 
-        if (part == PART_NUMBER.ONE) {
+        if (!isPart2()) {
             return Arrays.stream(texts).mapToLong(this::hash).sum();
         }
         else {

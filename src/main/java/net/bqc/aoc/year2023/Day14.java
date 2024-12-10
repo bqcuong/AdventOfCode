@@ -1,7 +1,7 @@
 package net.bqc.aoc.year2023;
 
 import net.bqc.aoc.Solution;
-import net.bqc.aoc.utils.SolutionUtils;
+import net.bqc.aoc.utils.EncryptionUtils;
 
 import java.util.HashMap;
 import java.util.List;
@@ -24,7 +24,7 @@ public class Day14 extends Solution {
 
         int[][] space = parseSpace(inputLines);
 
-        if (part == PART_NUMBER.ONE) {
+        if (!isPart2()) {
             roll(space, UP);
         }
         else {
@@ -36,7 +36,7 @@ public class Day14 extends Solution {
             long[] loads = new long[1001];
             for (int i = 1; i <= 1000; i++) {
                 rollOneCycle(space);
-                String hash = SolutionUtils.generateSHA256(space);
+                String hash = EncryptionUtils.generateSHA256(space);
                 loads[i] = calculateTotalLoad(space);
 
                 if (map.containsKey(hash)) {

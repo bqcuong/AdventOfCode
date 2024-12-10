@@ -1,7 +1,7 @@
 package net.bqc.aoc.year2024;
 
 import net.bqc.aoc.Solution;
-import net.bqc.aoc.utils.SolutionUtils;
+import net.bqc.aoc.utils.Array2DUtils;
 
 import java.util.List;
 
@@ -13,7 +13,7 @@ public class Day08 extends Solution {
     public long solve(PART_NUMBER part, List<String> inputLines) {
         super.solve(part, inputLines);
 
-        this.antennas = SolutionUtils.readAsMatrix(inputLines);
+        this.antennas = Array2DUtils.readAsMatrix(inputLines);
         int[][] antinodes = generateAntinodes();
 
         if (isPart2()) {
@@ -24,13 +24,13 @@ public class Day08 extends Solution {
                 }
             }
         }
-        return SolutionUtils.sum(antinodes);
+        return Array2DUtils.sum(antinodes);
     }
 
     private int[][] generateAntinodes() {
         int m = antennas.length;
         int n = antennas[0].length;
-        int[][] antinotes = SolutionUtils.generateMatrix(m, n);
+        int[][] antinotes = Array2DUtils.generateMatrix(m, n);
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
                 if (antennas[i][j] == '.') continue;

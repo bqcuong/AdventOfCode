@@ -27,7 +27,7 @@ public class Day01 extends Solution {
 
         int sum = 0;
         for (int i = 0; i < list1.length; i++) {
-            sum += part == PART_NUMBER.ONE ? Math.abs(list2[i] - list1[i]) : list1[i] * map.getOrDefault(list1[i], 0);
+            sum += !isPart2() ? Math.abs(list2[i] - list1[i]) : list1[i] * map.getOrDefault(list1[i], 0);
         }
         return sum;
     }

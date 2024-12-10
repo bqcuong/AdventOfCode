@@ -48,7 +48,7 @@ public class Day16 extends Solution {
 
         char[][] map = parseMap(inputLines);
 
-        if (part == PART_NUMBER.ONE) {
+        if (!isPart2()) {
             visitedPoints = new int[map.length][map[0].length];
             move(map, 0, 0, RIGHT);
         }

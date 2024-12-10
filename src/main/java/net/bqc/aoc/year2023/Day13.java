@@ -16,7 +16,7 @@ public class Day13 extends Solution {
     public long solve(PART_NUMBER part, List<String> inputLines) {
         super.solve(part, inputLines);
         List<int[][]> mirrors = parseMirrors(inputLines);
-        return summarize(mirrors, part == PART_NUMBER.ONE ? 0 : 1);
+        return summarize(mirrors, !isPart2() ? 0 : 1);
     }
 
     private long summarize(List<int[][]> mirrors, int acceptedWrongSymbol) {

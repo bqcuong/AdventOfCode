@@ -13,7 +13,7 @@ public class Day02 extends Solution {
     public long solve(PART_NUMBER part, List<String> inputLines) {
         super.solve(part, inputLines);
 
-        if (part == PART_NUMBER.ONE) return inputLines.stream().filter(this::isSafe).count();
+        if (!isPart2()) return inputLines.stream().filter(this::isSafe).count();
         return inputLines.stream().filter(this::isSafeWithDampener).count();
     }
 

@@ -1,7 +1,7 @@
 package net.bqc.aoc.year2023;
 
 import net.bqc.aoc.Solution;
-import net.bqc.aoc.utils.SolutionUtils;
+import net.bqc.aoc.utils.MathUtils;
 
 import java.util.HashMap;
 import java.util.List;
@@ -32,7 +32,7 @@ public class Day08 extends Solution {
                 .map(l -> travelInMaps(p, l))
                 .toList();
 
-            return SolutionUtils.lcm(steps);
+            return MathUtils.lcm(steps);
         }
     }
 

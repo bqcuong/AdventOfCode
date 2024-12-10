@@ -1,8 +1,8 @@
 package net.bqc.aoc.year2024;
 
 import net.bqc.aoc.Solution;
+import net.bqc.aoc.utils.Array2DUtils;
 import net.bqc.aoc.utils.Pos;
-import net.bqc.aoc.utils.SolutionUtils;
 
 import java.util.List;
 
@@ -12,14 +12,14 @@ public class Day04 extends Solution {
     public long solve(PART_NUMBER part, List<String> inputLines) {
         super.solve(part, inputLines);
 
-        char[][] matrix = SolutionUtils.readAsMatrix(inputLines);
+        char[][] matrix = Array2DUtils.readAsMatrix(inputLines);
 
-        if (part == PART_NUMBER.ONE) {
-            List<Pos> xPos = SolutionUtils.getXPos(matrix, 'X');
+        if (!isPart2()) {
+            List<Pos> xPos = Array2DUtils.getXPos(matrix, 'X');
             return xPos.stream().map(p -> countXMAS(matrix, p)).reduce(Integer::sum).get();
         }
 
-        List<Pos> aPos = SolutionUtils.getXPos(matrix, 'A');
+        List<Pos> aPos = Array2DUtils.getXPos(matrix, 'A');
         return aPos.stream().map(p -> countX_MAS(matrix, p)).reduce(Integer::sum).get();
     }
 
