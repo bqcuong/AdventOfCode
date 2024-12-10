@@ -7,6 +7,22 @@ import java.util.Set;
 
 public class Array2DUtils {
 
+    public static int[][] readAsIntMatrix(List<String> inputLines) {
+        int m = inputLines.size();
+        int n = inputLines.get(0).length();
+
+        int[][] matrix = new int[m][n];
+
+        for (int row = 0; row < m; row++) {
+            String line = inputLines.get(row);
+            matrix[row] = new int[n];
+            for (int col = 0; col < n; col++) {
+                matrix[row][col] = line.charAt(col) - '0';
+            }
+        }
+        return matrix;
+    }
+
     public static char[][] readAsMatrix(List<String> inputLines) {
         int m = inputLines.size();
         int n = inputLines.get(0).length();
@@ -49,6 +65,19 @@ public class Array2DUtils {
             matrix[row] = new int[n];
         }
         return matrix;
+    }
+
+    public static List<Pos> getXPos(int[][] matrix, int x) {
+        List<Pos> posList = new ArrayList<>();
+        for (int i = 0; i < matrix.length; i++) {
+            int[] row = matrix[i];
+            for (int j = 0; j < row.length; j++) {
+                if (row[j] == x) {
+                    posList.add(new Pos(i, j));
+                }
+            }
+        }
+        return posList;
     }
 
     public static List<Pos> getXPos(char[][] matrix, char x) {
