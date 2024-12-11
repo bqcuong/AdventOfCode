@@ -31,4 +31,8 @@ public class MathUtils {
     public static long lcm(List<Long> numbers) {
         return numbers.stream().reduce(1L, (a, b) -> a * b / gcd(a, b));
     }
+
+    public static int countDigits(long num) {
+        return (int)Math.floor(Math.log10(num) + 1);
+    }
 }
