@@ -23,8 +23,8 @@ This repository contains my Java solutions for the [Advent of Code](https://adve
 | 09  | [Disk Fragmenter](https://adventofcode.com/2024/day/9)       | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day09.java), [Test](src/test/java/net/bqc/aoc/year2024/Day09Test.java) | 
 | 10  | [Hoof It](https://adventofcode.com/2024/day/10)              | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day10.java), [Test](src/test/java/net/bqc/aoc/year2024/Day10Test.java) | 
 | 11  | [Plutonian Pebbles](https://adventofcode.com/2024/day/11)    | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day11.java), [Test](src/test/java/net/bqc/aoc/year2024/Day11Test.java) | 
-| 12  | [](https://adventofcode.com/2024/day/12)                     |       | [Code](src/main/java/net/bqc/aoc/year2024/Day12.java), [Test](src/test/java/net/bqc/aoc/year2024/Day12Test.java) | 
-| 13  | [](https://adventofcode.com/2024/day/13)                     |       | [Code](src/main/java/net/bqc/aoc/year2024/Day13.java), [Test](src/test/java/net/bqc/aoc/year2024/Day13Test.java) | 
+| 12  | [Garden Groups](https://adventofcode.com/2024/day/12)        | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day12.java), [Test](src/test/java/net/bqc/aoc/year2024/Day12Test.java) | 
+| 13  | [Claw Contraption](https://adventofcode.com/2024/day/13)     |       | [Code](src/main/java/net/bqc/aoc/year2024/Day13.java), [Test](src/test/java/net/bqc/aoc/year2024/Day13Test.java) | 
 | 14  | [](https://adventofcode.com/2024/day/14)                     |       | [Code](src/main/java/net/bqc/aoc/year2024/Day14.java), [Test](src/test/java/net/bqc/aoc/year2024/Day14Test.java) | 
 | 15  | [](https://adventofcode.com/2024/day/15)                     |       | [Code](src/main/java/net/bqc/aoc/year2024/Day15.java), [Test](src/test/java/net/bqc/aoc/year2024/Day15Test.java) | 
 | 16  | [](https://adventofcode.com/2024/day/16)                     |       | [Code](src/main/java/net/bqc/aoc/year2024/Day16.java), [Test](src/test/java/net/bqc/aoc/year2024/Day16Test.java) | 
