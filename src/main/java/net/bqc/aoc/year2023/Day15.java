@@ -6,7 +6,7 @@ import java.util.*;
 
 public class Day15 extends Solution {
 
-    class Lens {
+    private class Lens {
         String label;
         int focalLength;
 

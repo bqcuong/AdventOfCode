@@ -6,13 +6,13 @@ import java.util.List;
 
 public class Day20 extends Solution {
 
-    enum Pulse {
+    private enum Pulse {
         LOW(0), HIGH(1);
         final int status;
         Pulse(int status) { this.status = status; }
     }
 
-    class FlipFlop {
+    private class FlipFlop {
         int status = 0;
 
         Pulse transfer(Pulse pulse) {

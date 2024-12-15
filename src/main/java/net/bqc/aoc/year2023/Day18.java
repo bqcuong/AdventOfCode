@@ -8,7 +8,7 @@ import java.util.List;
 
 public class Day18 extends Solution {
 
-    enum Direction {
+    private enum Direction {
         NORTH("U", -1, 0), EAST("R", 0, 1),
         SOUTH("D", 1, 0), WEST("L", 0, -1);
 

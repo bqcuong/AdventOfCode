@@ -6,7 +6,7 @@ import java.util.*;
 
 public class Day19 extends Solution {
 
-    static class Configuration extends HashMap<String, Integer> {
+    private static class Configuration extends HashMap<String, Integer> {
 
         public Configuration(List<Integer> cfgValues) {
             this.put("x", cfgValues.get(0));
@@ -20,7 +20,7 @@ public class Day19 extends Solution {
         }
     }
 
-    class MachinePart {
+    private class MachinePart {
         String predicate;
         String output;
 
@@ -56,7 +56,7 @@ public class Day19 extends Solution {
         }
     }
 
-    class Machine {
+    private class Machine {
         List<MachinePart> parts = new ArrayList<>();
 
         public Machine(String machineSpecification) {

@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
 
 public class Day13 extends Solution {
 
-    class Pos {
+    private class Pos {
         public long x;
         public long y;
 
@@ -18,8 +18,8 @@ public class Day13 extends Solution {
             this.y = y;
         }
     }
-    
-    class ClawMachine {
+
+    private class ClawMachine {
         Pos A;
         Pos B;
         Pos prize;

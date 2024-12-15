@@ -8,7 +8,7 @@ import java.util.Objects;
 
 public class Day16 extends Solution {
 
-    class Point {
+    private class Point {
         int x;
         int y;
 

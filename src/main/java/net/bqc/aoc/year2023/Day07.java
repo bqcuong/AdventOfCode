@@ -6,7 +6,7 @@ import java.util.*;
 
 public class Day07 extends Solution {
 
-    enum HandType {
+    private enum HandType {
         HIGH_CARD(0),
         ONE_PAIR(1),
         TWO_PAIRS(2),
@@ -22,7 +22,7 @@ public class Day07 extends Solution {
         }
     }
 
-    class Card implements Comparable<Card> {
+    private class Card implements Comparable<Card> {
         char label;
         int rank;
 
@@ -66,7 +66,7 @@ public class Day07 extends Solution {
         }
     }
 
-    class CardHand implements Comparable<CardHand> {
+    private class CardHand implements Comparable<CardHand> {
         HandType type;
         long bid;
         List<Card> cards;

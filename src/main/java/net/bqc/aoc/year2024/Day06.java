@@ -12,7 +12,7 @@ import java.util.Set;
 
 public class Day06 extends Solution {
 
-    enum Direction {
+    private enum Direction {
         NORTH("^", -1, 0), EAST(">", 0, 1),
         SOUTH("v", 1, 0), WEST("<", 0, -1);
 

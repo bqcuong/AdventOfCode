@@ -10,7 +10,7 @@ import java.util.List;
 
 public class Day05 extends Solution {
 
-    static class Problem {
+    protected static class Problem {
         List<BigInteger> seeds = new ArrayList<>();
         List<PlantMap> maps = new ArrayList<>();
 
@@ -23,7 +23,7 @@ public class Day05 extends Solution {
         }
     }
 
-    static class PlantMap {
+    private static class PlantMap {
         List<BigInteger> rawMap = new ArrayList<>();
         List<Triple<BigInteger>> processedMap = new ArrayList<>();
 
@@ -37,7 +37,7 @@ public class Day05 extends Solution {
         }
     }
 
-    static class Triple<K> {
+    private static class Triple<K> {
         K start;
         K end;
 

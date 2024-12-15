@@ -8,7 +8,7 @@ import java.util.List;
 
 public class Day08 extends Solution {
 
-    class Problem {
+    private class Problem {
         String instructions;
         HashMap<String, String> maps = new HashMap<>();
     }

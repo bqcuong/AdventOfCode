@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Day04 extends Solution {
 
-    public static class ScratchCard {
+    protected static class ScratchCard {
         long gameId;
         long[] slots = new long[100];
         long winningPoints = 0;
