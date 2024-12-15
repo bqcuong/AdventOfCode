@@ -47,7 +47,7 @@ public class Day13 extends Solution {
     }
 
     private long numOfTokens(ClawMachine clawMachine) {
-        // this problem can be transformed longo a system of linear equations
+        // this problem can be transformed into a system of linear equations
         // aX * i  + bX * j = prizeX
         // aY * i  + bY * j = prizeY
 
