@@ -60,10 +60,10 @@ public class Day16 extends Solution {
         this.map = Array2DUtils.readAsMatrix(inputLines);
         Pos startPos = Array2DUtils.getXPos(map, 'S').get(0);
         Pos endPos = Array2DUtils.getXPos(map, 'E').get(0);
-        return bestCostDijkstra(startPos, endPos);
+        return computeBestCostDijkstra(startPos, endPos);
     }
 
-    private long bestCostDijkstra(Pos startPos, Pos endPos) {
+    private long computeBestCostDijkstra(Pos startPos, Pos endPos) {
         PathNode[][][] costMap = new PathNode[map.length][map[0].length][4];
         costMap[startPos.x][startPos.y][Direction.EAST.id()] = new PathNode(startPos, 0, Direction.EAST);
 
