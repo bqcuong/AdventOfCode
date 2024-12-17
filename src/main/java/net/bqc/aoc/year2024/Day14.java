@@ -36,7 +36,7 @@ public class Day14 extends Solution {
         while (elapsedTime++ < 10000) {
             moveRobots(1);
             if (isEasterEgg()) {
-                printMap();
+//                printMap();
                 break;
             }
         }
@@ -85,7 +85,7 @@ public class Day14 extends Solution {
         for (Robot robot : robots) {
             map[robot.p.x][robot.p.y]++;
         }
-//        Array2DUtils.printMatrix(map);
+        Array2DUtils.printMatrix(map);
     }
 
     private void readRobots(List<String> inputLines) {
