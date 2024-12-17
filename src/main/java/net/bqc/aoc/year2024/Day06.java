@@ -10,7 +10,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class Day06 extends Solution {
+public class Day06 extends Solution<Long> {
 
     private enum Direction {
         NORTH("^", -1, 0), EAST(">", 0, 1),
@@ -52,14 +52,14 @@ public class Day06 extends Solution {
     private int loopCount = 0;
 
     @Override
-    public long solve(Part part, List<String> inputLines) {
+    public Long solve(Part part, List<String> inputLines) {
         super.solve(part, inputLines);
         this.matrix = Array2DUtils.readAsMatrix(inputLines);
         Pair<Pos, Direction> start = findStartingPos(matrix);
 
         patrol(start.first, start.second);
 
-        return !isPart2() ? Array2DUtils.countInMatrix(matrix, 'X') : loopCount;
+        return !isPart2() ? (long) Array2DUtils.countInMatrix(matrix, 'X') : (long) loopCount;
     }
 
     private void patrol(Pos pos, Direction direction) {

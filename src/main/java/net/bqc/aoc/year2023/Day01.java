@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Day01 extends Solution {
+public class Day01 extends Solution<Long> {
 
     private static final Map<String, Character> NUM_MAP = new HashMap<>() {{
        put("one", '1');
@@ -68,7 +68,7 @@ public class Day01 extends Solution {
     }
 
     @Override
-    public long solve(Part part, List<String> inputLines) {
+    public Long solve(Part part, List<String> inputLines) {
         super.solve(part, inputLines);
         return inputLines.stream().mapToLong(this::parseCalibrationValue).sum();
     }

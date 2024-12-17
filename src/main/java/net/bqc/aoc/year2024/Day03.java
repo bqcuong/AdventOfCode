@@ -8,10 +8,10 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Day03 extends Solution {
+public class Day03 extends Solution<Long> {
 
     @Override
-    public long solve(Part part, List<String> inputLines) {
+    public Long solve(Part part, List<String> inputLines) {
         super.solve(part, inputLines);
 
         final String mulRegex = "mul\\(\\d+,\\d+\\)|(don't\\(\\))|(do\\(\\))";

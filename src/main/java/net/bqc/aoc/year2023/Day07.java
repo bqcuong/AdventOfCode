@@ -4,7 +4,7 @@ import net.bqc.aoc.Solution;
 
 import java.util.*;
 
-public class Day07 extends Solution {
+public class Day07 extends Solution<Long> {
 
     private enum HandType {
         HIGH_CARD(0),
@@ -179,7 +179,7 @@ public class Day07 extends Solution {
     }
 
     @Override
-    public long solve(Part part, List<String> inputLines) {
+    public Long solve(Part part, List<String> inputLines) {
         super.solve(part, inputLines);
 
         List<CardHand> cardHands = new ArrayList<>(inputLines.stream()

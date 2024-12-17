@@ -4,7 +4,7 @@ import net.bqc.aoc.Solution;
 
 import java.util.*;
 
-public class Day17 extends Solution {
+public class Day17 extends Solution<Long> {
 
     private enum Direction {
         NORTH(-1, 0), EAST(0, 1), SOUTH(1, 0), WEST(0, -1);
@@ -142,11 +142,11 @@ public class Day17 extends Solution {
     }
 
     @Override
-    public long solve(Part part, List<String> inputLines) {
+    public Long solve(Part part, List<String> inputLines) {
         super.solve(part, inputLines);
 
         Graph graph = constructGraph(inputLines);
-        return !isPart2() ? graph.minCost(0, 3) : graph.minCost(4, 10);
+        return !isPart2() ? (long) graph.minCost(0, 3) : (long) graph.minCost(4, 10);
     }
 
     private Graph constructGraph(List<String> inputLines) {

@@ -9,7 +9,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class Day10 extends Solution {
+public class Day10 extends Solution<Long> {
 
     private enum Direction {
         NORTH(-1, 0), EAST(0, 1), SOUTH(1, 0), WEST(0, -1);
@@ -28,7 +28,7 @@ public class Day10 extends Solution {
     private Set<String> visitedHead = new HashSet<>();
 
     @Override
-    public long solve(Part part, List<String> inputLines) {
+    public Long solve(Part part, List<String> inputLines) {
         super.solve(part, inputLines);
 
         this.topoMap = Array2DUtils.readAsIntMatrix(inputLines);
@@ -38,7 +38,7 @@ public class Day10 extends Solution {
             exploreTrail(x);
         });
 
-        return isPart2() ? ratings : score;
+        return isPart2() ? (long) ratings : (long) score;
     }
 
     private void exploreTrail(Pos pos) {

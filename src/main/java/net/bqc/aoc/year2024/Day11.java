@@ -5,12 +5,12 @@ import net.bqc.aoc.utils.MathUtils;
 
 import java.util.*;
 
-public class Day11 extends Solution {
+public class Day11 extends Solution<Long> {
 
     private final Map<String, Long> cache = new HashMap<>();
 
     @Override
-    public long solve(Part part, List<String> inputLines) {
+    public Long solve(Part part, List<String> inputLines) {
         super.solve(part, inputLines);
         long[] stones = Arrays.stream(inputLines.get(0).split(" ")).mapToLong(Long::parseLong).toArray();
         return Arrays.stream(stones).map(stone -> blink(stone, isPart2() ? 75 : 25)).sum();

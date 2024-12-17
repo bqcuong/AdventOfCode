@@ -8,7 +8,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
-public class Day05 extends Solution {
+public class Day05 extends Solution<Long> {
 
     protected static class Problem {
         List<BigInteger> seeds = new ArrayList<>();
@@ -60,8 +60,8 @@ public class Day05 extends Solution {
     }
 
     @Override
-    public long solve(Part part, List<String> inputLines) {
-        return 0;
+    public Long solve(Part part, List<String> inputLines) {
+        return null;
     }
 
     public BigInteger solve2(Part part, List<String> inputLines) {

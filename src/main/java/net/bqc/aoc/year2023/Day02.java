@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Day02 extends Solution {
+public class Day02 extends Solution<Long> {
 
     private static class Requirements {
         long gameId;
@@ -21,7 +21,7 @@ public class Day02 extends Solution {
     }};
 
     @Override
-    public long solve(Part part, List<String> inputLines) {
+    public Long solve(Part part, List<String> inputLines) {
         super.solve(part, inputLines);
 
         if (!isPart2()) {

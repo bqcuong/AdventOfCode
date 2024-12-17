@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Day15 extends Solution {
+public class Day15 extends Solution<Long> {
 
     private enum Direction {
         NORTH("^", -1, 0), EAST(">", 0, 1),
@@ -34,7 +34,7 @@ public class Day15 extends Solution {
     private List<Direction> moves = new ArrayList<>();
 
     @Override
-    public long solve(Part part, List<String> inputLines) {
+    public Long solve(Part part, List<String> inputLines) {
         super.solve(part, inputLines);
         readMapAndMoves(inputLines);
         moves.forEach(m -> move(startPos.x, startPos.y, m));

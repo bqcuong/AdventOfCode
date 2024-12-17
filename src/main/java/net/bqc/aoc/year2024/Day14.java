@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Day14 extends Solution {
+public class Day14 extends Solution<Long> {
 
     class Robot {
         Pos p;
@@ -25,7 +25,7 @@ public class Day14 extends Solution {
     private final int n = 101;
 
     @Override
-    public long solve(Part part, List<String> inputLines) {
+    public Long solve(Part part, List<String> inputLines) {
         super.solve(part, inputLines);
         readRobots(inputLines);
         return !isPart2() ? countRobots() : findEasterEgg();

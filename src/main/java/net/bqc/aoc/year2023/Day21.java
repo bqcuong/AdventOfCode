@@ -4,11 +4,11 @@ import net.bqc.aoc.Solution;
 
 import java.util.List;
 
-public class Day21 extends Solution {
+public class Day21 extends Solution<Long> {
 
     @Override
-    public long solve(Part part, List<String> inputLines) {
+    public Long solve(Part part, List<String> inputLines) {
         super.solve(part, inputLines);
-        return 0;
+        return 0L;
     }
 }

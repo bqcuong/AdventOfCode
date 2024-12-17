@@ -6,7 +6,7 @@ import net.bqc.aoc.utils.Pos;
 
 import java.util.*;
 
-public class Day16 extends Solution {
+public class Day16 extends Solution<Long> {
 
     private enum Direction {
         NORTH(-1, 0), EAST(0, 1), SOUTH(1, 0), WEST(0, -1);
@@ -54,7 +54,7 @@ public class Day16 extends Solution {
     private char[][] map;
 
     @Override
-    public long solve(Part part, List<String> inputLines) {
+    public Long solve(Part part, List<String> inputLines) {
         super.solve(part, inputLines);
 
         this.map = Array2DUtils.readAsMatrix(inputLines);

@@ -6,7 +6,7 @@ import net.bqc.aoc.utils.MathUtils;
 import java.util.HashMap;
 import java.util.List;
 
-public class Day08 extends Solution {
+public class Day08 extends Solution<Long> {
 
     private class Problem {
         String instructions;
@@ -14,7 +14,7 @@ public class Day08 extends Solution {
     }
 
     @Override
-    public long solve(Part part, List<String> inputLines) {
+    public Long solve(Part part, List<String> inputLines) {
         super.solve(part, inputLines);
 
         Problem p = parseProblem(inputLines);

@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Day14 extends Solution {
+public class Day14 extends Solution<Long> {
 
     private final int LEFT = 0;
     private final int UP = 1;
@@ -19,7 +19,7 @@ public class Day14 extends Solution {
     private final int DOT = 0;
 
     @Override
-    public long solve(Part part, List<String> inputLines) {
+    public Long solve(Part part, List<String> inputLines) {
         super.solve(part, inputLines);
 
         int[][] space = parseSpace(inputLines);

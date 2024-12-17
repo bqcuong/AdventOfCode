@@ -6,21 +6,21 @@ import net.bqc.aoc.utils.Pos;
 
 import java.util.List;
 
-public class Day04 extends Solution {
+public class Day04 extends Solution<Long> {
 
     @Override
-    public long solve(Part part, List<String> inputLines) {
+    public Long solve(Part part, List<String> inputLines) {
         super.solve(part, inputLines);
 
         char[][] matrix = Array2DUtils.readAsMatrix(inputLines);
 
         if (!isPart2()) {
             List<Pos> xPos = Array2DUtils.getXPos(matrix, 'X');
-            return xPos.stream().map(p -> countXMAS(matrix, p)).reduce(Integer::sum).get();
+            return (long) xPos.stream().map(p -> countXMAS(matrix, p)).reduce(Integer::sum).get();
         }
 
         List<Pos> aPos = Array2DUtils.getXPos(matrix, 'A');
-        return aPos.stream().map(p -> countX_MAS(matrix, p)).reduce(Integer::sum).get();
+        return (long) aPos.stream().map(p -> countX_MAS(matrix, p)).reduce(Integer::sum).get();
     }
 
     public int countX_MAS(char[][] matrix, Pos aPos) {

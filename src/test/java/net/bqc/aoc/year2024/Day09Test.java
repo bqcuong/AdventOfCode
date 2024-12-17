@@ -30,16 +30,16 @@ public class Day09Test extends AbstractTest {
 
     @ParameterizedTest
     @MethodSource("inputDataSource")
-    void testSolver(Solution.Part part, List<String> inputLines, long expectedSum) {
-        long computedSum = solution.solve(part, inputLines);
-        assertEquals(expectedSum, computedSum);
+    void testSolver(Solution.Part part, List<String> inputLines, long expectedOutput) {
+        long computedOutput = solution.solve(part, inputLines);
+        assertEquals(expectedOutput, computedOutput);
     }
 
     @ParameterizedTest
     @MethodSource("sampleDataSource")
-    void testSolver_2(Solution.Part part, List<String> sampleInputLines, long expected) {
-        long computedSum = solution.solve(part, sampleInputLines);
-        assertEquals(expected, computedSum);
+    void testSolver_2(Solution.Part part, List<String> sampleInputLines, long expectedOutput) {
+        long computedOutput = solution.solve(part, sampleInputLines);
+        assertEquals(expectedOutput, computedOutput);
     }
 
     static Stream<Arguments> sampleDataSource() {

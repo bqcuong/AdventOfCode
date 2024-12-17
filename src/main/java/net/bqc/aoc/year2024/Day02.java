@@ -7,10 +7,10 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-public class Day02 extends Solution {
+public class Day02 extends Solution<Long> {
 
     @Override
-    public long solve(Part part, List<String> inputLines) {
+    public Long solve(Part part, List<String> inputLines) {
         super.solve(part, inputLines);
 
         if (!isPart2()) return inputLines.stream().filter(this::isSafe).count();

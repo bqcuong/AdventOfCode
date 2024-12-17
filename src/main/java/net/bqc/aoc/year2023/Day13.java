@@ -7,13 +7,13 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 
-public class Day13 extends Solution {
+public class Day13 extends Solution<Long> {
 
     private final int ROCK = 5;
     private final int ASH = 0;
 
     @Override
-    public long solve(Part part, List<String> inputLines) {
+    public Long solve(Part part, List<String> inputLines) {
         super.solve(part, inputLines);
         List<int[][]> mirrors = parseMirrors(inputLines);
         return summarize(mirrors, !isPart2() ? 0 : 1);

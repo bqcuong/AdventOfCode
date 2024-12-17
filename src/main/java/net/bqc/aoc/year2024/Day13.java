@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Day13 extends Solution {
+public class Day13 extends Solution<Long> {
 
     private class Pos {
         public long x;
@@ -34,7 +34,7 @@ public class Day13 extends Solution {
     private List<ClawMachine> clawMachines = new ArrayList<>();
 
     @Override
-    public long solve(Part part, List<String> inputLines) {
+    public Long solve(Part part, List<String> inputLines) {
         super.solve(part, inputLines);
         readClawMachines(inputLines);
 

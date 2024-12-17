@@ -5,14 +5,14 @@ import net.bqc.aoc.Solution;
 import java.util.Arrays;
 import java.util.List;
 
-public class Day09 extends Solution {
+public class Day09 extends Solution<Long> {
 
     private int[] fileBlocks;
     private int[] emptyBlocks;
     private long checkSum;
 
     @Override
-    public long solve(Part part, List<String> inputLines) {
+    public Long solve(Part part, List<String> inputLines) {
         super.solve(part, inputLines);
         readBlocks(inputLines);
         moveBlocks();

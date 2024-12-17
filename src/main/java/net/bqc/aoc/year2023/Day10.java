@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public class Day10 extends Solution {
+public class Day10 extends Solution<Long> {
 
     private final int LEFT = 0;
     private final int UP = 1;
@@ -26,7 +26,7 @@ public class Day10 extends Solution {
     private List<int[]> visitedPoints;
 
     @Override
-    public long solve(Part part, List<String> inputLines) {
+    public Long solve(Part part, List<String> inputLines) {
         super.solve(part, inputLines);
         int m = inputLines.size();
         int n = inputLines.get(0).length();

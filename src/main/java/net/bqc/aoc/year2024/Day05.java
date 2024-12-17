@@ -5,13 +5,13 @@ import net.bqc.aoc.Solution;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class Day05 extends Solution {
+public class Day05 extends Solution<Long> {
 
     private Map<Integer, Set<Integer>> pageOrderMap = new HashMap<>();
     private List<List<Integer>> printUpdates = new ArrayList<>();
 
     @Override
-    public long solve(Part part, List<String> inputLines) {
+    public Long solve(Part part, List<String> inputLines) {
         super.solve(part, inputLines);
         readInputs(inputLines);
 

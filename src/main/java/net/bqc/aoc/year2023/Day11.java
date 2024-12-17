@@ -5,13 +5,13 @@ import net.bqc.aoc.Solution;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Day11 extends Solution {
+public class Day11 extends Solution<Long> {
 
     private final List<Integer> emptyRows = new ArrayList<>();
     private final List<Integer> emptyCols = new ArrayList<>();
 
     @Override
-    public long solve(Part part, List<String> inputLines) {
+    public Long solve(Part part, List<String> inputLines) {
         super.solve(part, inputLines);
         int[][] space = parseSpace(inputLines);
         List<int[]> galaxies = findGalaxies(space);

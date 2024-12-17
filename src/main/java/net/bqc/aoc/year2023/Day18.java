@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Day18 extends Solution {
+public class Day18 extends Solution<Long> {
 
     private enum Direction {
         NORTH("U", -1, 0), EAST("R", 0, 1),
@@ -40,7 +40,7 @@ public class Day18 extends Solution {
     private final List<int[]> visitedPoints = new ArrayList<>();
 
     @Override
-    public long solve(Part part, List<String> inputLines) {
+    public Long solve(Part part, List<String> inputLines) {
         super.solve(part, inputLines);
 
         long totalVisitedPoints = traversal(inputLines);

@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-public class Day06 extends Solution {
+public class Day06 extends Solution<Long> {
 
     public BigInteger solve2(Part part, List<String> inputLines) {
         super.solve(part, inputLines);
@@ -41,7 +41,7 @@ public class Day06 extends Solution {
     }
 
     @Override
-    public long solve(Part part, List<String> inputLines) {
-        return 0;
+    public Long solve(Part part, List<String> inputLines) {
+        return null;
     }
 }

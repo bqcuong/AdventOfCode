@@ -5,12 +5,12 @@ import net.bqc.aoc.utils.Array2DUtils;
 
 import java.util.List;
 
-public class Day08 extends Solution {
+public class Day08 extends Solution<Long> {
 
     private char[][] antennas;
 
     @Override
-    public long solve(Part part, List<String> inputLines) {
+    public Long solve(Part part, List<String> inputLines) {
         super.solve(part, inputLines);
 
         this.antennas = Array2DUtils.readAsMatrix(inputLines);

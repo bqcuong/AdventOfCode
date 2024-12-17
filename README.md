@@ -10,33 +10,33 @@ This repository contains my Java solutions for the [Advent of Code](https://adve
 * Maven (a wrapper is provided)
 
 ## 2024
-| Day | Task                                                         | Stars | Solutions                                                                                                        |
-|:---:|--------------------------------------------------------------|:------|------------------------------------------------------------------------------------------------------------------|
-| 01  | [Historian Hysteria](https://adventofcode.com/2024/day/1)    | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day01.java), [Test](src/test/java/net/bqc/aoc/year2024/Day01Test.java) | 
-| 02  | [Red-Nosed Reports](https://adventofcode.com/2024/day/2)     | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day02.java), [Test](src/test/java/net/bqc/aoc/year2024/Day02Test.java) | 
-| 03  | [Mull It Over](https://adventofcode.com/2024/day/3)          | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day03.java), [Test](src/test/java/net/bqc/aoc/year2024/Day03Test.java) | 
-| 04  | [Ceres Search](https://adventofcode.com/2024/day/4)          | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day04.java), [Test](src/test/java/net/bqc/aoc/year2024/Day04Test.java) | 
-| 05  | [Print Queue](https://adventofcode.com/2024/day/5)           | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day05.java), [Test](src/test/java/net/bqc/aoc/year2024/Day05Test.java) | 
-| 06  | [Guard Gallivant](https://adventofcode.com/2024/day/6)       | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day06.java), [Test](src/test/java/net/bqc/aoc/year2024/Day06Test.java) | 
-| 07  | [Bridge Repair](https://adventofcode.com/2024/day/7)         | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day07.java), [Test](src/test/java/net/bqc/aoc/year2024/Day07Test.java) | 
-| 08  | [Resonant Collinearity](https://adventofcode.com/2024/day/8) | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day08.java), [Test](src/test/java/net/bqc/aoc/year2024/Day08Test.java) | 
-| 09  | [Disk Fragmenter](https://adventofcode.com/2024/day/9)       | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day09.java), [Test](src/test/java/net/bqc/aoc/year2024/Day09Test.java) | 
-| 10  | [Hoof It](https://adventofcode.com/2024/day/10)              | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day10.java), [Test](src/test/java/net/bqc/aoc/year2024/Day10Test.java) | 
-| 11  | [Plutonian Pebbles](https://adventofcode.com/2024/day/11)    | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day11.java), [Test](src/test/java/net/bqc/aoc/year2024/Day11Test.java) | 
-| 12  | [Garden Groups](https://adventofcode.com/2024/day/12)        | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day12.java), [Test](src/test/java/net/bqc/aoc/year2024/Day12Test.java) | 
-| 13  | [Claw Contraption](https://adventofcode.com/2024/day/13)     | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day13.java), [Test](src/test/java/net/bqc/aoc/year2024/Day13Test.java) | 
-| 14  | [Restroom Redoubt](https://adventofcode.com/2024/day/14)     | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day14.java), [Test](src/test/java/net/bqc/aoc/year2024/Day14Test.java) | 
-| 15  | [Warehouse Woes](https://adventofcode.com/2024/day/15)       | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day15.java), [Test](src/test/java/net/bqc/aoc/year2024/Day15Test.java) | 
-| 16  | [Reindeer Maze](https://adventofcode.com/2024/day/16)        |       | [Code](src/main/java/net/bqc/aoc/year2024/Day16.java), [Test](src/test/java/net/bqc/aoc/year2024/Day16Test.java) | 
-| 17  | [](https://adventofcode.com/2024/day/17)                     |       | [Code](src/main/java/net/bqc/aoc/year2024/Day17.java), [Test](src/test/java/net/bqc/aoc/year2024/Day17Test.java) | 
-| 18  | [](https://adventofcode.com/2024/day/18)                     |       | [Code](src/main/java/net/bqc/aoc/year2024/Day18.java), [Test](src/test/java/net/bqc/aoc/year2024/Day18Test.java) | 
-| 19  | [](https://adventofcode.com/2024/day/19)                     |       | [Code](src/main/java/net/bqc/aoc/year2024/Day19.java), [Test](src/test/java/net/bqc/aoc/year2024/Day19Test.java) |
-| 20  | [](https://adventofcode.com/2024/day/20)                     |       | [Code](src/main/java/net/bqc/aoc/year2024/Day20.java), [Test](src/test/java/net/bqc/aoc/year2024/Day20Test.java) |
-| 21  | [](https://adventofcode.com/2024/day/21)                     |       | [Code](src/main/java/net/bqc/aoc/year2024/Day21.java), [Test](src/test/java/net/bqc/aoc/year2024/Day21Test.java) |
-| 22  | [](https://adventofcode.com/2024/day/22)                     |       | [Code](src/main/java/net/bqc/aoc/year2024/Day22.java), [Test](src/test/java/net/bqc/aoc/year2024/Day22Test.java) |
-| 23  | [](https://adventofcode.com/2024/day/23)                     |       | [Code](src/main/java/net/bqc/aoc/year2024/Day23.java), [Test](src/test/java/net/bqc/aoc/year2024/Day23Test.java) |
-| 24  | [](https://adventofcode.com/2024/day/24)                     |       | [Code](src/main/java/net/bqc/aoc/year2024/Day24.java), [Test](src/test/java/net/bqc/aoc/year2024/Day24Test.java) |
-| 25  | [](https://adventofcode.com/2024/day/25)                     |       | [Code](src/main/java/net/bqc/aoc/year2024/Day25.java), [Test](src/test/java/net/bqc/aoc/year2024/Day25Test.java) |
+| Day | Task                                                           | Stars | Solutions                                                                                                        |
+|:---:|----------------------------------------------------------------|:------|------------------------------------------------------------------------------------------------------------------|
+| 01  | [Historian Hysteria](https://adventofcode.com/2024/day/1)      | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day01.java), [Test](src/test/java/net/bqc/aoc/year2024/Day01Test.java) | 
+| 02  | [Red-Nosed Reports](https://adventofcode.com/2024/day/2)       | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day02.java), [Test](src/test/java/net/bqc/aoc/year2024/Day02Test.java) | 
+| 03  | [Mull It Over](https://adventofcode.com/2024/day/3)            | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day03.java), [Test](src/test/java/net/bqc/aoc/year2024/Day03Test.java) | 
+| 04  | [Ceres Search](https://adventofcode.com/2024/day/4)            | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day04.java), [Test](src/test/java/net/bqc/aoc/year2024/Day04Test.java) | 
+| 05  | [Print Queue](https://adventofcode.com/2024/day/5)             | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day05.java), [Test](src/test/java/net/bqc/aoc/year2024/Day05Test.java) | 
+| 06  | [Guard Gallivant](https://adventofcode.com/2024/day/6)         | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day06.java), [Test](src/test/java/net/bqc/aoc/year2024/Day06Test.java) | 
+| 07  | [Bridge Repair](https://adventofcode.com/2024/day/7)           | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day07.java), [Test](src/test/java/net/bqc/aoc/year2024/Day07Test.java) | 
+| 08  | [Resonant Collinearity](https://adventofcode.com/2024/day/8)   | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day08.java), [Test](src/test/java/net/bqc/aoc/year2024/Day08Test.java) | 
+| 09  | [Disk Fragmenter](https://adventofcode.com/2024/day/9)         | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day09.java), [Test](src/test/java/net/bqc/aoc/year2024/Day09Test.java) | 
+| 10  | [Hoof It](https://adventofcode.com/2024/day/10)                | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day10.java), [Test](src/test/java/net/bqc/aoc/year2024/Day10Test.java) | 
+| 11  | [Plutonian Pebbles](https://adventofcode.com/2024/day/11)      | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day11.java), [Test](src/test/java/net/bqc/aoc/year2024/Day11Test.java) | 
+| 12  | [Garden Groups](https://adventofcode.com/2024/day/12)          | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day12.java), [Test](src/test/java/net/bqc/aoc/year2024/Day12Test.java) | 
+| 13  | [Claw Contraption](https://adventofcode.com/2024/day/13)       | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day13.java), [Test](src/test/java/net/bqc/aoc/year2024/Day13Test.java) | 
+| 14  | [Restroom Redoubt](https://adventofcode.com/2024/day/14)       | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day14.java), [Test](src/test/java/net/bqc/aoc/year2024/Day14Test.java) | 
+| 15  | [Warehouse Woes](https://adventofcode.com/2024/day/15)         | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day15.java), [Test](src/test/java/net/bqc/aoc/year2024/Day15Test.java) | 
+| 16  | [Reindeer Maze](https://adventofcode.com/2024/day/16)          | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day16.java), [Test](src/test/java/net/bqc/aoc/year2024/Day16Test.java) | 
+| 17  | [Chronospatial Computer](https://adventofcode.com/2024/day/17) |       | [Code](src/main/java/net/bqc/aoc/year2024/Day17.java), [Test](src/test/java/net/bqc/aoc/year2024/Day17Test.java) | 
+| 18  | [](https://adventofcode.com/2024/day/18)                       |       | [Code](src/main/java/net/bqc/aoc/year2024/Day18.java), [Test](src/test/java/net/bqc/aoc/year2024/Day18Test.java) | 
+| 19  | [](https://adventofcode.com/2024/day/19)                       |       | [Code](src/main/java/net/bqc/aoc/year2024/Day19.java), [Test](src/test/java/net/bqc/aoc/year2024/Day19Test.java) |
+| 20  | [](https://adventofcode.com/2024/day/20)                       |       | [Code](src/main/java/net/bqc/aoc/year2024/Day20.java), [Test](src/test/java/net/bqc/aoc/year2024/Day20Test.java) |
+| 21  | [](https://adventofcode.com/2024/day/21)                       |       | [Code](src/main/java/net/bqc/aoc/year2024/Day21.java), [Test](src/test/java/net/bqc/aoc/year2024/Day21Test.java) |
+| 22  | [](https://adventofcode.com/2024/day/22)                       |       | [Code](src/main/java/net/bqc/aoc/year2024/Day22.java), [Test](src/test/java/net/bqc/aoc/year2024/Day22Test.java) |
+| 23  | [](https://adventofcode.com/2024/day/23)                       |       | [Code](src/main/java/net/bqc/aoc/year2024/Day23.java), [Test](src/test/java/net/bqc/aoc/year2024/Day23Test.java) |
+| 24  | [](https://adventofcode.com/2024/day/24)                       |       | [Code](src/main/java/net/bqc/aoc/year2024/Day24.java), [Test](src/test/java/net/bqc/aoc/year2024/Day24Test.java) |
+| 25  | [](https://adventofcode.com/2024/day/25)                       |       | [Code](src/main/java/net/bqc/aoc/year2024/Day25.java), [Test](src/test/java/net/bqc/aoc/year2024/Day25Test.java) |
 
 
 ## 2023

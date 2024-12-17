@@ -7,10 +7,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Day01 extends Solution {
+public class Day01 extends Solution<Long> {
 
     @Override
-    public long solve(Part part, List<String> inputLines) {
+    public Long solve(Part part, List<String> inputLines) {
         super.solve(part, inputLines);
         int[] list1 = new int[inputLines.size()];
         int[] list2 = new int[inputLines.size()];
@@ -30,6 +30,6 @@ public class Day01 extends Solution {
         for (int i = 0; i < list1.length; i++) {
             sum += !isPart2() ? Math.abs(list2[i] - list1[i]) : list1[i] * map.getOrDefault(list1[i], 0);
         }
-        return sum;
+        return (long) sum;
     }
 }

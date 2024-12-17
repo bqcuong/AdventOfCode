@@ -6,10 +6,10 @@ import net.bqc.aoc.utils.Array2DUtils;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Day03 extends Solution {
+public class Day03 extends Solution<Long> {
 
     @Override
-    public long solve(Part part, List<String> inputLines) {
+    public Long solve(Part part, List<String> inputLines) {
         super.solve(part, inputLines);
 
         int m = inputLines.size();

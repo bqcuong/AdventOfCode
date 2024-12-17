@@ -7,10 +7,10 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 
-public class Day09 extends Solution {
+public class Day09 extends Solution<Long> {
 
     @Override
-    public long solve(Part part, List<String> inputLines) {
+    public Long solve(Part part, List<String> inputLines) {
         super.solve(part, inputLines);
         List<List<Long>> histories = inputLines.stream()
             .map(l -> Arrays.stream(l.split("\s")).map(Long::parseLong).toList())

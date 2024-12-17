@@ -4,7 +4,7 @@ import net.bqc.aoc.Solution;
 
 import java.util.*;
 
-public class Day15 extends Solution {
+public class Day15 extends Solution<Long> {
 
     private class Lens {
         String label;
@@ -17,7 +17,7 @@ public class Day15 extends Solution {
     }
 
     @Override
-    public long solve(Part part, List<String> inputLines) {
+    public Long solve(Part part, List<String> inputLines) {
         super.solve(part, inputLines);
 
         String[] texts = inputLines.get(0).split(",");

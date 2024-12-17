@@ -4,7 +4,7 @@ import net.bqc.aoc.Solution;
 
 import java.util.*;
 
-public class Day19 extends Solution {
+public class Day19 extends Solution<Long> {
 
     private static class Configuration extends HashMap<String, Integer> {
 
@@ -81,7 +81,7 @@ public class Day19 extends Solution {
     List<Configuration> configs = new ArrayList<>();
 
     @Override
-    public long solve(Part part, List<String> inputLines) {
+    public Long solve(Part part, List<String> inputLines) {
         super.solve(part, inputLines);
 
         parseMachineAndConfiguration(inputLines);

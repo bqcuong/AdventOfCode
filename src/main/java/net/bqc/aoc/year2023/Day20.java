@@ -4,7 +4,7 @@ import net.bqc.aoc.Solution;
 
 import java.util.List;
 
-public class Day20 extends Solution {
+public class Day20 extends Solution<Long> {
 
     private enum Pulse {
         LOW(0), HIGH(1);
@@ -29,8 +29,8 @@ public class Day20 extends Solution {
     }
 
     @Override
-    public long solve(Part part, List<String> inputLines) {
+    public Long solve(Part part, List<String> inputLines) {
         super.solve(part, inputLines);
-        return 0;
+        return 0L;
     }
 }

@@ -2,7 +2,7 @@ package net.bqc.aoc;
 
 import java.util.List;
 
-public abstract class Solution {
+public abstract class Solution<T> {
 
     public enum Part {
         ONE, TWO
@@ -11,9 +11,9 @@ public abstract class Solution {
     // Part Under Processing
     protected Part pup = Part.ONE;
 
-    public long solve(Part part, List<String> inputLines) {
+    public T solve(Part part, List<String> inputLines) {
         this.pup = part;
-        return 0;
+        return null;
     }
     
     public boolean isPart2() {

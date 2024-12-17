@@ -5,7 +5,7 @@ import net.bqc.aoc.Solution;
 import java.util.Arrays;
 import java.util.List;
 
-public class Day04 extends Solution {
+public class Day04 extends Solution<Long> {
 
     protected static class ScratchCard {
         long gameId;
@@ -26,7 +26,7 @@ public class Day04 extends Solution {
     }
 
     @Override
-    public long solve(Part part, List<String> inputLines) {
+    public Long solve(Part part, List<String> inputLines) {
         super.solve(part, inputLines);
 
         if (!isPart2()) {

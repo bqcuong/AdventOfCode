@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 
-public class Day16 extends Solution {
+public class Day16 extends Solution<Long> {
 
     private class Point {
         int x;
@@ -43,7 +43,7 @@ public class Day16 extends Solution {
 
     private int[][] visitedPoints;
     @Override
-    public long solve(Part part, List<String> inputLines) {
+    public Long solve(Part part, List<String> inputLines) {
         super.solve(part, inputLines);
 
         char[][] map = parseMap(inputLines);
