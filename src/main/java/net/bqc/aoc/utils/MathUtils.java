@@ -5,6 +5,10 @@ import java.math.MathContext;
 import java.util.List;
 
 public class MathUtils {
+    public static int manhattanDistance(int x1, int y1, int x2, int y2) {
+        return Math.abs(x1 - x2) + Math.abs(y1 - y2);
+    }
+
     public static BigDecimal[] solveQuadraticEquation(BigDecimal a, BigDecimal b, BigDecimal c) {
         BigDecimal discriminant = b.pow(2).subtract(new BigDecimal("4").multiply(a).multiply(c));
 
