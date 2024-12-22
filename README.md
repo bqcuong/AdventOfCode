@@ -32,7 +32,7 @@ This repository contains my Java solutions for the [Advent of Code](https://adve
 | 18  | [RAM Run](https://adventofcode.com/2024/day/18)                | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day18.java), [Test](src/test/java/net/bqc/aoc/year2024/Day18Test.java) | 
 | 19  | [Linen Layout](https://adventofcode.com/2024/day/19)           | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day19.java), [Test](src/test/java/net/bqc/aoc/year2024/Day19Test.java) |
 | 20  | [Race Condition](https://adventofcode.com/2024/day/20)         | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day20.java), [Test](src/test/java/net/bqc/aoc/year2024/Day20Test.java) |
-| 21  | [](https://adventofcode.com/2024/day/21)                       |       | [Code](src/main/java/net/bqc/aoc/year2024/Day21.java), [Test](src/test/java/net/bqc/aoc/year2024/Day21Test.java) |
+| 21  | [Keypad Conundrum](https://adventofcode.com/2024/day/21)       | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day21.java), [Test](src/test/java/net/bqc/aoc/year2024/Day21Test.java) |
 | 22  | [](https://adventofcode.com/2024/day/22)                       |       | [Code](src/main/java/net/bqc/aoc/year2024/Day22.java), [Test](src/test/java/net/bqc/aoc/year2024/Day22Test.java) |
 | 23  | [](https://adventofcode.com/2024/day/23)                       |       | [Code](src/main/java/net/bqc/aoc/year2024/Day23.java), [Test](src/test/java/net/bqc/aoc/year2024/Day23Test.java) |
 | 24  | [](https://adventofcode.com/2024/day/24)                       |       | [Code](src/main/java/net/bqc/aoc/year2024/Day24.java), [Test](src/test/java/net/bqc/aoc/year2024/Day24Test.java) |

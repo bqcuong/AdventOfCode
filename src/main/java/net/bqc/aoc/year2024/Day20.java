@@ -22,7 +22,7 @@ public class Day20 extends Solution<Long> {
         Pos startPos = Array2DUtils.getXPos(map, 'S').get(0);
         Pos endPos = Array2DUtils.getXPos(map, 'E').get(0);
 
-        List<PathNode> initialPath = shortestPath(map, startPos, endPos, '#');
+        List<PathNode> initialPath = shortestPaths(map, startPos, endPos, '#').get(0);
         long cheatCount = 0;
 
         for (int i = 0; i < initialPath.size() - 1; i++) {
