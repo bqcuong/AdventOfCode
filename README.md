@@ -36,8 +36,7 @@ This repository contains my Java solutions for the [Advent of Code](https://adve
 | 22  | [Monkey Market](https://adventofcode.com/2024/day/22)          | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day22.java), [Test](src/test/java/net/bqc/aoc/year2024/Day22Test.java) |
 | 23  | [LAN Party](https://adventofcode.com/2024/day/23)              | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day23.java), [Test](src/test/java/net/bqc/aoc/year2024/Day23Test.java) |
 | 24  | [Crossed Wires](https://adventofcode.com/2024/day/24)          | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day24.java), [Test](src/test/java/net/bqc/aoc/year2024/Day24Test.java) |
-| 25  | [](https://adventofcode.com/2024/day/25)                       |       | [Code](src/main/java/net/bqc/aoc/year2024/Day25.java), [Test](src/test/java/net/bqc/aoc/year2024/Day25Test.java) |
-
+| 25  | [Code Chronicle](https://adventofcode.com/2024/day/25)         | ⭐⭐    | [Code](src/main/java/net/bqc/aoc/year2024/Day25.java), [Test](src/test/java/net/bqc/aoc/year2024/Day25Test.java) |
 
 ## 2023
 
