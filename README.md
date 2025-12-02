@@ -10,20 +10,20 @@ This repository contains my Java solutions for the [Advent of Code](https://adve
 * Maven (a wrapper is provided)
 
 ## 2025
-| Day | Task                                     | Stars | Solutions                                  |
-|:---:|------------------------------------------|:------|--------------------------------------------|
-| 01  | [Secret Entrance](https://adventofcode.com/2025/day/1)  | ⭐⭐    | [Code](src/main/go/year2025/Day01/main.go) 
-| 02  | [Gift Shop](https://adventofcode.com/2025/day/2)  | ⭐⭐    | [Code](src/main/go/year2025/Day02/main.go) 
-| 03  | [](https://adventofcode.com/2025/day/3)  |       | [Code](src/main/go/year2025/Day03/main.go) |
-| 04  | [](https://adventofcode.com/2025/day/4)  |       | [Code](src/main/go/year2025/Day04/main.go) |
-| 05  | [](https://adventofcode.com/2025/day/5)  |       | [Code](src/main/go/year2025/Day05/main.go) |
-| 06  | [](https://adventofcode.com/2025/day/6)  |       | [Code](src/main/go/year2025/Day06/main.go) |
-| 07  | [](https://adventofcode.com/2025/day/7)  |       | [Code](src/main/go/year2025/Day07/main.go) |
-| 08  | [](https://adventofcode.com/2025/day/8)  |       | [Code](src/main/go/year2025/Day08/main.go) |
-| 09  | [](https://adventofcode.com/2025/day/9)  |       | [Code](src/main/go/year2025/Day09/main.go) |
-| 10  | [](https://adventofcode.com/2025/day/10) |       | [Code](src/main/go/year2025/Day10/main.go) |
-| 11  | [](https://adventofcode.com/2025/day/11) |       | [Code](src/main/go/year2025/Day11/main.go) |
-| 12  | [](https://adventofcode.com/2025/day/12) |       | [Code](src/main/go/year2025/Day12/main.go) |
+| Day | Task                                                   | Stars | Solutions                                  |
+|:---:|--------------------------------------------------------|:------|--------------------------------------------|
+| 01  | [Secret Entrance](https://adventofcode.com/2025/day/1) | ⭐⭐    | [Code](src/main/go/year2025/Day01/main.go) |
+| 02  | [Gift Shop](https://adventofcode.com/2025/day/2)       | ⭐⭐    | [Code](src/main/go/year2025/Day02/main.go) |
+| 03  | [](https://adventofcode.com/2025/day/3)                |       | [Code](src/main/go/year2025/Day03/main.go) |
+| 04  | [](https://adventofcode.com/2025/day/4)                |       | [Code](src/main/go/year2025/Day04/main.go) |
+| 05  | [](https://adventofcode.com/2025/day/5)                |       | [Code](src/main/go/year2025/Day05/main.go) |
+| 06  | [](https://adventofcode.com/2025/day/6)                |       | [Code](src/main/go/year2025/Day06/main.go) |
+| 07  | [](https://adventofcode.com/2025/day/7)                |       | [Code](src/main/go/year2025/Day07/main.go) |
+| 08  | [](https://adventofcode.com/2025/day/8)                |       | [Code](src/main/go/year2025/Day08/main.go) |
+| 09  | [](https://adventofcode.com/2025/day/9)                |       | [Code](src/main/go/year2025/Day09/main.go) |
+| 10  | [](https://adventofcode.com/2025/day/10)               |       | [Code](src/main/go/year2025/Day10/main.go) |
+| 11  | [](https://adventofcode.com/2025/day/11)               |       | [Code](src/main/go/year2025/Day11/main.go) |
+| 12  | [](https://adventofcode.com/2025/day/12)               |       | [Code](src/main/go/year2025/Day12/main.go) |
 
 ## 2024
 | Day | Task                                                           | Stars | Solutions                                                                                                        |
