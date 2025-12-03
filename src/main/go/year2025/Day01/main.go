@@ -17,8 +17,8 @@ func readTextFile(path string) ([]string, error) {
 }
 
 func main() {
-	//lines, err := readTextFile("sample_input")
-	lines, err := readTextFile("input")
+	//lines, err := readTextFile("sample_input.txt")
+	lines, err := readTextFile("input.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
