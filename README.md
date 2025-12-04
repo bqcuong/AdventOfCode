@@ -14,8 +14,8 @@ This repository contains my Java solutions for the [Advent of Code](https://adve
 |:---:|--------------------------------------------------------|:------|--------------------------------------------|
 | 01  | [Secret Entrance](https://adventofcode.com/2025/day/1) | ⭐⭐    | [Code](src/main/go/year2025/Day01/main.go) |
 | 02  | [Gift Shop](https://adventofcode.com/2025/day/2)       | ⭐⭐    | [Code](src/main/go/year2025/Day02/main.go) |
-| 03  | [Lobby](https://adventofcode.com/2025/day/3)           |       | [Code](src/main/go/year2025/Day03/main.go) |
-| 04  | [Printing Department](https://adventofcode.com/2025/day/4)                |       | [Code](src/main/go/year2025/Day04/main.go) 
+| 03  | [Lobby](https://adventofcode.com/2025/day/3)           | ⭐⭐    | [Code](src/main/go/year2025/Day03/main.go) |
+| 04  | [Printing Department](https://adventofcode.com/2025/day/4)    | ⭐⭐    | [Code](src/main/go/year2025/Day04/main.go) 
 | 05  | [](https://adventofcode.com/2025/day/5)                |       | [Code](src/main/go/year2025/Day05/main.go) |
 | 06  | [](https://adventofcode.com/2025/day/6)                |       | [Code](src/main/go/year2025/Day06/main.go) |
 | 07  | [](https://adventofcode.com/2025/day/7)                |       | [Code](src/main/go/year2025/Day07/main.go) |
