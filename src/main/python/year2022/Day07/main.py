@@ -1,5 +1,5 @@
 lines = []
-with open('input', 'r') as f:
+with open('input.txt', 'r') as f:
     lines = f.read().splitlines()
 
 def build_file_tree(lines):

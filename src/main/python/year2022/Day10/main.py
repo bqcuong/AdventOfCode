@@ -1,5 +1,5 @@
 lines = []
-with open('input', 'r') as f:
+with open('input.txt', 'r') as f:
     for line in f.read().splitlines():
         if line != "noop":
             lines.append("noop2")

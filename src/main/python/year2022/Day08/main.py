@@ -1,5 +1,5 @@
 forest = []
-with open('input', 'r') as f:
+with open('input.txt', 'r') as f:
     forest = [[int(num) for num in line.strip()] for line in f]
 
 m = len(forest)

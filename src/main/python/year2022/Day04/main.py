@@ -1,5 +1,5 @@
 lines = []
-with open('input', 'r') as f:
+with open('input.txt', 'r') as f:
     lines = f.read().splitlines()
 
 def is_fully_contained(seg_a, seg_b):

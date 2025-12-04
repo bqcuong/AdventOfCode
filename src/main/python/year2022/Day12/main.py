@@ -1,5 +1,5 @@
 mat = []
-with open('input', 'r') as f:
+with open('input.txt', 'r') as f:
     mat = [[c for c in line] for line in f.read().splitlines()]
 
 def find(to_find, mat):

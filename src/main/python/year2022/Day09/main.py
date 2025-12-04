@@ -2,7 +2,7 @@ import operator
 from math import sqrt
 
 lines = []
-with open('input', 'r') as f:
+with open('input.txt', 'r') as f:
     lines = f.read().splitlines()
 
 h_moves = []

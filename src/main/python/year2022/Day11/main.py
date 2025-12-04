@@ -2,7 +2,7 @@ from math import prod
 
 
 monkeys = []
-with open('input', 'r') as f:
+with open('input.txt', 'r') as f:
     lines = f.read().splitlines()
     for i in range(0, len(lines) - 7 + 2, 7):
         items = list(map(lambda x: x.strip(), lines[i+1].split(":")[1].split(",")))
