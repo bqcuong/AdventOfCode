@@ -14,7 +14,7 @@ func TestPart1(t *testing.T) {
 		expected  int
 	}{
 		{
-			name:      "Sample Input",
+			name:      "Input",
 			inputPath: "year2025/Day04/input.txt",
 			expected:  1553,
 		},
@@ -26,7 +26,7 @@ func TestPart1(t *testing.T) {
 				log.Fatal(err)
 			}
 			if got := solve(u.PART1, lines); got != tc.expected {
-				t.Errorf("part1 = %v, expected %v", got, tc.expected)
+				t.Errorf("actual = %v, expected %v", got, tc.expected)
 			}
 		})
 	}
