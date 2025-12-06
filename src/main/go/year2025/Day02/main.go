@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	u "github.com/bqcuong/AdventOfCode/utils"
+	c "github.com/bqcuong/AdventOfCode/common"
 )
 
 func isRepeatedTwice(id string) bool {
@@ -34,7 +34,7 @@ func isRepeated(id string) bool {
 
 func main() {
 	//lines, err := readTextFile("year2025/Day02/sample_input.txt")
-	lines, err := u.ReadTextFile("year2025/Day02/input.txt")
+	lines, err := c.ReadTextFile("year2025/Day02/input.txt")
 	if err != nil {
 		log.Fatal(err)
 	}

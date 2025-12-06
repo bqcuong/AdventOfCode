@@ -6,16 +6,16 @@ import (
 	"strconv"
 	"strings"
 
-	u "github.com/bqcuong/AdventOfCode/utils"
+	c "github.com/bqcuong/AdventOfCode/common"
 )
 
 type Range struct {
 	start, end int
 }
 
-func solve(part u.Part, lines []string) int {
+func solve(part c.Part, lines []string) int {
 	freshIngrds, availableIngrds := readIngredient(lines)
-	if part == u.PART1 {
+	if part == c.PART1 {
 		count := 0
 		for _, ingrd := range availableIngrds {
 			for _, ingrdRange := range freshIngrds {

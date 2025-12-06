@@ -5,12 +5,12 @@ import (
 	"log"
 	"strconv"
 
-	u "github.com/bqcuong/AdventOfCode/utils"
+	c "github.com/bqcuong/AdventOfCode/common"
 )
 
 func main() {
 	//lines, err := readTextFile("year2025/Day01/sample_input.txt")
-	lines, err := u.ReadTextFile("year2025/Day01/input.txt")
+	lines, err := c.ReadTextFile("year2025/Day01/input.txt")
 	if err != nil {
 		log.Fatal(err)
 	}

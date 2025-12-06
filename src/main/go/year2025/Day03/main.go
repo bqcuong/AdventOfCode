@@ -6,11 +6,11 @@ import (
 	"math"
 	"strconv"
 
-	u "github.com/bqcuong/AdventOfCode/utils"
+	c "github.com/bqcuong/AdventOfCode/common"
 )
 
-func solve(part u.Part, lines []string) int {
-	if part == u.PART1 {
+func solve(part c.Part, lines []string) int {
+	if part == c.PART1 {
 		return part1(lines)
 	}
 	return part2(lines)
@@ -68,11 +68,11 @@ func part1(lines []string) int {
 
 func main() {
 	//lines, err := readTextFile("year2025/Day03/sample_input.txt")
-	lines, err := u.ReadTextFile("year2025/Day03/input.txt")
+	lines, err := c.ReadTextFile("year2025/Day03/input.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	fmt.Println(solve(u.PART1, lines))
-	fmt.Println(solve(u.PART2, lines))
+	fmt.Println(solve(c.PART1, lines))
+	fmt.Println(solve(c.PART2, lines))
 }

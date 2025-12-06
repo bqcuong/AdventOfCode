@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	u "github.com/bqcuong/AdventOfCode/utils"
+	c "github.com/bqcuong/AdventOfCode/common"
 )
 
 func isAccessibleRoll(mat [][]rune, i int, j int) bool {
@@ -23,16 +23,16 @@ func isAccessibleRoll(mat [][]rune, i int, j int) bool {
 	return check < 4
 }
 
-func getAccessibleRolls(mat [][]rune) []u.Pos {
+func getAccessibleRolls(mat [][]rune) []c.Pos {
 	m, n := len(mat), len(mat[0])
-	positions := make([]u.Pos, 0)
+	positions := make([]c.Pos, 0)
 	for i := 0; i < m; i++ {
 		for j := 0; j < n; j++ {
 			if mat[i][j] != '@' {
 				continue
 			}
 			if isAccessibleRoll(mat, i, j) {
-				positions = append(positions, u.Pos{X: i, Y: j})
+				positions = append(positions, c.Pos{X: i, Y: j})
 			}
 		}
 	}
@@ -54,9 +54,9 @@ func countRemovableRolls(mat [][]rune) int {
 	return count
 }
 
-func solve(part u.Part, lines []string) int {
-	mat := u.ReadMatrix(lines)
-	if part == u.PART1 {
+func solve(part c.Part, lines []string) int {
+	mat := c.ReadMatrix(lines)
+	if part == c.PART1 {
 		return len(getAccessibleRolls(mat))
 	}
 	return countRemovableRolls(mat)
@@ -64,11 +64,11 @@ func solve(part u.Part, lines []string) int {
 
 func main() {
 	//lines, err := readTextFile("year2025/Day04/sample_input.txt")
-	lines, err := u.ReadTextFile("year2025/Day04/input.txt")
+	lines, err := c.ReadTextFile("year2025/Day04/input.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	fmt.Println(solve(u.PART1, lines))
-	fmt.Println(solve(u.PART2, lines))
+	fmt.Println(solve(c.PART1, lines))
+	fmt.Println(solve(c.PART2, lines))
 }

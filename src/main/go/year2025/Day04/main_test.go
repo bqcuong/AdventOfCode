@@ -4,7 +4,7 @@ import (
 	"log"
 	"testing"
 
-	u "github.com/bqcuong/AdventOfCode/utils"
+	c "github.com/bqcuong/AdventOfCode/common"
 )
 
 func TestPart1(t *testing.T) {
@@ -21,11 +21,11 @@ func TestPart1(t *testing.T) {
 	}
 	for _, tc := range tests {
 		t.Run(tc.name, func(t *testing.T) {
-			lines, err := u.ReadTextFile(tc.inputPath)
+			lines, err := c.ReadTextFile(tc.inputPath)
 			if err != nil {
 				log.Fatal(err)
 			}
-			if got := solve(u.PART1, lines); got != tc.expected {
+			if got := solve(c.PART1, lines); got != tc.expected {
 				t.Errorf("actual = %v, expected %v", got, tc.expected)
 			}
 		})
