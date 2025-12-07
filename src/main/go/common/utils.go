@@ -1,6 +1,7 @@
 package common
 
 import (
+	"fmt"
 	"os"
 	"strings"
 )
@@ -40,6 +41,26 @@ func ReadMatrix(lines []string) [][]rune {
 		mat[i] = []rune(line)
 	}
 	return mat
+}
+
+func PrintMatrix(mat [][]rune) {
+	for _, row := range mat {
+		for _, c := range row {
+			fmt.Print(string(c))
+		}
+		fmt.Println()
+	}
+}
+
+func Search(mat [][]rune, toSearch rune) *Pos {
+	for i := range len(mat) {
+		for j := range len(mat[i]) {
+			if mat[i][j] == toSearch {
+				return &Pos{j, i}
+			}
+		}
+	}
+	return nil
 }
 
 func ReadTextFile(path string) ([]string, error) {

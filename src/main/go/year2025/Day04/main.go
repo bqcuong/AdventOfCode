@@ -32,7 +32,7 @@ func getAccessibleRolls(mat [][]rune) []c.Pos {
 				continue
 			}
 			if isAccessibleRoll(mat, i, j) {
-				positions = append(positions, c.Pos{X: i, Y: j})
+				positions = append(positions, c.Pos{X: j, Y: i})
 			}
 		}
 	}
@@ -48,7 +48,7 @@ func countRemovableRolls(mat [][]rune) int {
 		}
 		count += len(accessibleRolls)
 		for _, roll := range accessibleRolls {
-			mat[roll.X][roll.Y] = 'x'
+			mat[roll.Y][roll.X] = 'x'
 		}
 	}
 	return count

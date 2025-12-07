@@ -18,7 +18,7 @@ This repository contains my Java solutions for the [Advent of Code](https://adve
 | 04  | [Printing Department](https://adventofcode.com/2025/day/4) | ⭐⭐    | [Code](src/main/go/year2025/Day04/main.go) |
 | 05  | [Cafeteria](https://adventofcode.com/2025/day/5)           | ⭐⭐    | [Code](src/main/go/year2025/Day05/main.go) |
 | 06  | [Trash Compactor](https://adventofcode.com/2025/day/6)     | ⭐⭐    | [Code](src/main/go/year2025/Day06/main.go) |
-| 07  | [](https://adventofcode.com/2025/day/7)                    |       | [Code](src/main/go/year2025/Day07/main.go) |
+| 07  | [Laboratories](https://adventofcode.com/2025/day/7)        | ⭐⭐    | [Code](src/main/go/year2025/Day07/main.go) |
 | 08  | [](https://adventofcode.com/2025/day/8)                    |       | [Code](src/main/go/year2025/Day08/main.go) |
 | 09  | [](https://adventofcode.com/2025/day/9)                    |       | [Code](src/main/go/year2025/Day09/main.go) |
 | 10  | [](https://adventofcode.com/2025/day/10)                   |       | [Code](src/main/go/year2025/Day10/main.go) |
