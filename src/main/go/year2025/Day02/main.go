@@ -1,19 +1,19 @@
 package main
 
 import (
-	"fmt"
-	"log"
 	"strconv"
 	"strings"
 
 	c "github.com/bqcuong/AdventOfCode/common"
 )
 
-func isRepeatedTwice(id string) bool {
+type Day02 struct{}
+
+func (d Day02) isRepeatedTwice(id string) bool {
 	return len(id)%2 == 0 && id[:len(id)/2] == id[len(id)/2:]
 }
 
-func isRepeated(id string) bool {
+func (d Day02) isRepeated(id string) bool {
 	for subLen := 1; subLen <= len(id)/2; subLen++ {
 		if len(id)%subLen != 0 {
 			continue
@@ -32,13 +32,7 @@ func isRepeated(id string) bool {
 	return false
 }
 
-func main() {
-	//lines, err := readTextFile("year2025/Day02/sample_input.txt")
-	lines, err := c.ReadTextFile("year2025/Day02/input.txt")
-	if err != nil {
-		log.Fatal(err)
-	}
-
+func (d Day02) Solve(part c.Part, lines []string) int {
 	idPairs := strings.Split(lines[0], ",")
 
 	sum, sum2 := 0, 0
@@ -48,14 +42,16 @@ func main() {
 		sndId, _ := strconv.Atoi(pair[1])
 
 		for id := firstId; id <= sndId; id++ {
-			if isRepeatedTwice(strconv.Itoa(id)) {
+			if d.isRepeatedTwice(strconv.Itoa(id)) {
 				sum += id
 			}
-			if isRepeated(strconv.Itoa(id)) {
+			if d.isRepeated(strconv.Itoa(id)) {
 				sum2 += id
 			}
 		}
 	}
-
-	fmt.Println(sum, sum2)
+	if part == c.PART1 {
+		return sum
+	}
+	return sum2
 }

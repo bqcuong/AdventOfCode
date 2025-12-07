@@ -1,20 +1,14 @@
 package main
 
 import (
-	"fmt"
-	"log"
 	"strconv"
 
 	c "github.com/bqcuong/AdventOfCode/common"
 )
 
-func main() {
-	//lines, err := readTextFile("year2025/Day01/sample_input.txt")
-	lines, err := c.ReadTextFile("year2025/Day01/input.txt")
-	if err != nil {
-		log.Fatal(err)
-	}
+type Day01 struct{}
 
+func (d Day01) Solve(part c.Part, lines []string) int {
 	points := 50
 	points2 := 50
 	count := 0
@@ -43,6 +37,8 @@ func main() {
 			}
 		}
 	}
-
-	fmt.Println(count, count2)
+	if part == c.PART1 {
+		return count
+	}
+	return count2
 }

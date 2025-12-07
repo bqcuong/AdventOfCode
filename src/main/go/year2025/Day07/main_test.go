@@ -15,12 +15,12 @@ func TestPart1(t *testing.T) {
 	}{
 		{
 			name:      "Sample Input",
-			inputPath: "year2025/Day07/sample_input.txt",
+			inputPath: "sample_input.txt",
 			expected:  21,
 		},
 		{
 			name:      "Input",
-			inputPath: "year2025/Day07/input.txt",
+			inputPath: "input.txt",
 			expected:  1622,
 		},
 	}
@@ -46,12 +46,12 @@ func TestPart2(t *testing.T) {
 	}{
 		{
 			name:      "Sample Input",
-			inputPath: "year2025/Day07/sample_input.txt",
+			inputPath: "sample_input.txt",
 			expected:  40,
 		},
 		{
 			name:      "Input",
-			inputPath: "year2025/Day07/input.txt",
+			inputPath: "input.txt",
 			expected:  10357305916520,
 		},
 	}

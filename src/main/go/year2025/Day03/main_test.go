@@ -16,15 +16,16 @@ func TestPart1(t *testing.T) {
 		{
 			name:      "Sample Input",
 			inputPath: "sample_input.txt",
-			expected:  4277556,
+			expected:  357,
 		},
 		{
 			name:      "Input",
 			inputPath: "input.txt",
-			expected:  4951502530386,
+			expected:  17412,
 		},
 	}
-	var day c.Day = Day06{}
+
+	var day c.Day = Day03{}
 	for _, tc := range tests {
 		t.Run(tc.name, func(t *testing.T) {
 			lines, err := c.ReadTextFile(tc.inputPath)
@@ -47,16 +48,15 @@ func TestPart2(t *testing.T) {
 		{
 			name:      "Sample Input",
 			inputPath: "sample_input.txt",
-			expected:  3263827,
+			expected:  3121910778619,
 		},
 		{
 			name:      "Input",
 			inputPath: "input.txt",
-			expected:  8486156119946,
+			expected:  172681562473501,
 		},
 	}
-
-	var day c.Day = Day06{}
+	var day c.Day = Day03{}
 	for _, tc := range tests {
 		t.Run(tc.name, func(t *testing.T) {
 			lines, err := c.ReadTextFile(tc.inputPath)

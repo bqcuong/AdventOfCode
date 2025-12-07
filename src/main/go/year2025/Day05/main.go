@@ -13,8 +13,10 @@ type Range struct {
 	start, end int
 }
 
-func solve(part c.Part, lines []string) int {
-	freshIngrds, availableIngrds := readIngredient(lines)
+type Day05 struct{}
+
+func (d Day05) Solve(part c.Part, lines []string) int {
+	freshIngrds, availableIngrds := d.readIngredient(lines)
 	if part == c.PART1 {
 		count := 0
 		for _, ingrd := range availableIngrds {
@@ -25,11 +27,12 @@ func solve(part c.Part, lines []string) int {
 				}
 			}
 		}
+		return count
 	}
-	return countAllFreshIngrds(freshIngrds)
+	return d.countAllFreshIngrds(freshIngrds)
 }
 
-func countAllFreshIngrds(freshIngrds []Range) int {
+func (d Day05) countAllFreshIngrds(freshIngrds []Range) int {
 	sort.Slice(freshIngrds, func(i, j int) bool {
 		return freshIngrds[i].start < freshIngrds[j].start
 	})
@@ -50,7 +53,7 @@ func countAllFreshIngrds(freshIngrds []Range) int {
 	return count
 }
 
-func readIngredient(lines []string) ([]Range, []int) {
+func (d Day05) readIngredient(lines []string) ([]Range, []int) {
 	freshIngrds := make([]Range, 0)
 
 	idx := 0
