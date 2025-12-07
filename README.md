@@ -7,7 +7,13 @@ This repository contains my Java solutions for the [Advent of Code](https://adve
 
 #### Requirements
 * Java 17
-* Maven (a wrapper is provided)
+* Python 3.9
+* Go 1.24.3
+
+#### Generate boilerplate solution code
+```
+./mvnw compile exec:java@generate -Dexec.args="<year> <day>"
+```
 
 ## 2025
 | Day | Task                                                       | Stars | Solutions                                                                                    |
