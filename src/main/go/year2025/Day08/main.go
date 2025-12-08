@@ -61,7 +61,32 @@ func (cuf *CircuitUnionFind) GetCircuitSizes() map[c.Pos3D]int {
 func (d Day08) Solve(part c.Part, lines []string) int {
 	boxes := d.ReadJunctionBoxPositions(lines)
 	connections := d.GetConnectionsSortedByDistance(boxes)
-	return d.ConnectBoxes(boxes, connections)
+	if part == c.PART1 {
+		return d.ConnectBoxes(boxes, connections)
+	}
+	return d.ConnectBoxesUnlimited(boxes, connections)
+}
+
+func (d Day08) ConnectBoxesUnlimited(boxes []c.Pos3D, connections []Connection) int {
+	cuf := NewCircuitUnionFind()
+	for _, con := range connections {
+		p1 := con.p1
+		p2 := con.p2
+		cuf.Union(p1, p2)
+
+		setSizes := cuf.GetCircuitSizes()
+		sizes := make([]int, 0, len(setSizes))
+		for _, size := range setSizes {
+			sizes = append(sizes, size)
+		}
+		slices.SortFunc(sizes, func(a, b int) int {
+			return b - a
+		})
+		if sizes[0] == len(boxes) {
+			return p1.X * p2.X
+		}
+	}
+	return 0
 }
 
 func (d Day08) ConnectBoxes(boxes []c.Pos3D, connections []Connection) int {

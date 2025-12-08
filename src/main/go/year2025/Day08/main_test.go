@@ -47,12 +47,12 @@ func TestPart2(t *testing.T) {
 		{
 			name:      "Sample Input",
 			inputPath: "sample_input.txt",
-			expected:  40,
+			expected:  25272,
 		},
 		{
 			name:      "Input",
 			inputPath: "input.txt",
-			expected:  117000,
+			expected:  8368033065,
 		},
 	}
 
