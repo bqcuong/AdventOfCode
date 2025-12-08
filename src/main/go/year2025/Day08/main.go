@@ -49,59 +49,12 @@ func (cuf *CircuitUnionFind) IsConnected(p1, p2 c.Pos3D) bool {
 	return cuf.Find(p1) == cuf.Find(p2)
 }
 
-func (cuf *CircuitUnionFind) GetCircuitSizes() map[c.Pos3D]int {
-	sizes := make(map[c.Pos3D]int)
+func (cuf *CircuitUnionFind) GetCircuitSizes() []int {
+	setSizes := make(map[c.Pos3D]int)
 	for pos := range cuf.parent {
 		root := cuf.Find(pos)
-		sizes[root]++
+		setSizes[root]++
 	}
-	return sizes
-}
-
-func (d Day08) Solve(part c.Part, lines []string) int {
-	boxes := d.ReadJunctionBoxPositions(lines)
-	connections := d.GetConnectionsSortedByDistance(boxes)
-	if part == c.PART1 {
-		return d.ConnectBoxes(boxes, connections)
-	}
-	return d.ConnectBoxesUnlimited(boxes, connections)
-}
-
-func (d Day08) ConnectBoxesUnlimited(boxes []c.Pos3D, connections []Connection) int {
-	cuf := NewCircuitUnionFind()
-	for _, con := range connections {
-		p1 := con.p1
-		p2 := con.p2
-		cuf.Union(p1, p2)
-
-		setSizes := cuf.GetCircuitSizes()
-		sizes := make([]int, 0, len(setSizes))
-		for _, size := range setSizes {
-			sizes = append(sizes, size)
-		}
-		slices.SortFunc(sizes, func(a, b int) int {
-			return b - a
-		})
-		if sizes[0] == len(boxes) {
-			return p1.X * p2.X
-		}
-	}
-	return 0
-}
-
-func (d Day08) ConnectBoxes(boxes []c.Pos3D, connections []Connection) int {
-	maxPairs := 1000
-	if len(boxes) <= 20 { // for sample input
-		maxPairs = 10
-	}
-	connections = connections[:maxPairs]
-	cuf := NewCircuitUnionFind()
-	for _, con := range connections {
-		p1 := con.p1
-		p2 := con.p2
-		cuf.Union(p1, p2)
-	}
-	setSizes := cuf.GetCircuitSizes()
 	sizes := make([]int, 0, len(setSizes))
 	for _, size := range setSizes {
 		sizes = append(sizes, size)
@@ -109,6 +62,46 @@ func (d Day08) ConnectBoxes(boxes []c.Pos3D, connections []Connection) int {
 	slices.SortFunc(sizes, func(a, b int) int {
 		return b - a
 	})
+	return sizes
+}
+
+func (d Day08) Solve(part c.Part, lines []string) int {
+	boxes := d.ReadJunctionBoxPositions(lines)
+	connections := d.GetConnectionsSortedByDistance(boxes)
+	if part == c.PART1 {
+		maxPairs := 1000
+		if len(boxes) <= 20 { // for sample input
+			maxPairs = 10
+		}
+		return d.ConnectBoxes(connections, maxPairs)
+	}
+	return d.ConnectBoxesUnlimited(len(boxes), connections)
+}
+
+func (d Day08) ConnectBoxesUnlimited(numOfBoxes int, connections []Connection) int {
+	cuf := NewCircuitUnionFind()
+	for _, con := range connections {
+		p1 := con.p1
+		p2 := con.p2
+		cuf.Union(p1, p2)
+
+		sizes := cuf.GetCircuitSizes()
+		if sizes[0] == numOfBoxes {
+			return p1.X * p2.X
+		}
+	}
+	return 0
+}
+
+func (d Day08) ConnectBoxes(connections []Connection, maxPairs int) int {
+	connections = connections[:maxPairs]
+	cuf := NewCircuitUnionFind()
+	for _, con := range connections {
+		p1 := con.p1
+		p2 := con.p2
+		cuf.Union(p1, p2)
+	}
+	sizes := cuf.GetCircuitSizes()
 	return sizes[0] * sizes[1] * sizes[2]
 }
 
