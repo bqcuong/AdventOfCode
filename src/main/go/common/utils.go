@@ -2,6 +2,7 @@ package common
 
 import (
 	"fmt"
+	"math"
 	"os"
 	"strings"
 )
@@ -16,6 +17,19 @@ const (
 type Pos struct {
 	X int
 	Y int
+}
+
+type Pos3D struct {
+	X int
+	Y int
+	Z int
+}
+
+func EuclideanDistance(p1, p2 Pos3D) float64 {
+	dx := float64(p1.X - p2.X)
+	dy := float64(p1.Y - p2.Y)
+	dz := float64(p1.Z - p2.Z)
+	return math.Sqrt(dx*dx + dy*dy + dz*dz)
 }
 
 func IsBlankCol(mat [][]rune, col int) bool {
