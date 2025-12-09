@@ -25,6 +25,13 @@ type Pos3D struct {
 	Z int
 }
 
+func Sorted(a int, b int) (int, int) {
+	if a < b {
+		return a, b
+	}
+	return b, a
+}
+
 func AbsInt(x int, y int) int {
 	if x < y {
 		return y - x

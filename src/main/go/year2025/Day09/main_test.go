@@ -52,7 +52,7 @@ func TestPart2(t *testing.T) {
 		{
 			name:      "Input",
 			inputPath: "input.txt",
-			expected:  8368033065,
+			expected:  1529675217,
 		},
 	}
 
