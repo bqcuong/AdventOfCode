@@ -1,5 +1,5 @@
 # Advent Of Code
-This repository contains my Java solutions for the [Advent of Code](https://adventofcode.com) challenges.
+This repository contains my solutions in Java, Go, and Python for the [Advent of Code](https://adventofcode.com) challenges.
 
 *Let's solve and count together!*
 
@@ -26,7 +26,7 @@ This repository contains my Java solutions for the [Advent of Code](https://adve
 | 06  | [Trash Compactor](https://adventofcode.com/2025/day/6)     | ⭐⭐    | [Code](src/main/go/year2025/Day06/main.go), [Test](src/main/go/year2025/Day06/main_test.go)  |
 | 07  | [Laboratories](https://adventofcode.com/2025/day/7)        | ⭐⭐    | [Code](src/main/go/year2025/Day07/main.go), [Test](src/main/go/year2025/Day07/main_test.go)  |
 | 08  | [Playground](https://adventofcode.com/2025/day/8)          | ⭐⭐    | [Code](src/main/go/year2025/Day08/main.go), [Test](src/main/go/year2025/Day08/main_test.go)  |
-| 09  | [](https://adventofcode.com/2025/day/9)                    |       | [Code](src/main/go/year2025/Day09/main.go), [Test](src/main/go/year2025/Day09/main_test.go)  |
+| 09  | [Movie Theater](https://adventofcode.com/2025/day/9)       | ⭐     | [Code](src/main/go/year2025/Day09/main.go), [Test](src/main/go/year2025/Day09/main_test.go)  |
 | 10  | [](https://adventofcode.com/2025/day/10)                   |       | [Code](src/main/go/year2025/Day10/main.go), [Test](src/main/go/year2025/Day010/main_test.go) |
 | 11  | [](https://adventofcode.com/2025/day/11)                   |       | [Code](src/main/go/year2025/Day11/main.go), [Test](src/main/go/year2025/Day011/main_test.go) |
 | 12  | [](https://adventofcode.com/2025/day/12)                   |       | [Code](src/main/go/year2025/Day12/main.go), [Test](src/main/go/year2025/Day012/main_test.go) |

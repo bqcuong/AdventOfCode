@@ -25,6 +25,13 @@ type Pos3D struct {
 	Z int
 }
 
+func AbsInt(x int, y int) int {
+	if x < y {
+		return y - x
+	}
+	return x - y
+}
+
 func EuclideanDistance(p1, p2 Pos3D) float64 {
 	dx := float64(p1.X - p2.X)
 	dy := float64(p1.Y - p2.Y)
