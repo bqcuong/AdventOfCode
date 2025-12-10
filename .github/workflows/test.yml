@@ -23,7 +23,7 @@ jobs:
           go-version: 1.24.3
           cache: true
       - name: Install Go dependencies
-        run: cd src/main/go && go get .
+        run: cd src/main/go && go mod tidy
       - name: Setup Z3
         id: z3
         uses: cda-tum/setup-z3@v1
