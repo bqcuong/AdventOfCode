@@ -1,6 +1,9 @@
 package main
 
 import (
+	"container/list"
+	"fmt"
+	"slices"
 	"strconv"
 	"strings"
 
@@ -14,31 +17,78 @@ type Button struct {
 }
 
 type Config struct {
-	RequiredStates  []bool
+	States          []bool
+	FinalStates     []bool
 	Buttons         []Button
 	RequiredJoltage []int
 }
 
 func (d Day10) Solve(part c.Part, lines []string) int {
 	configs := d.ReadConfigs(lines)
-	return len(configs)
+	if part == c.PART1 {
+		sum := 0
+		for _, config := range configs {
+			sum += d.getFewestButtonPresses(config)
+		}
+		return sum
+	}
+	return 0
+}
+
+type QueueElement struct {
+	States []bool
+	depth  int
+}
+
+func (d Day10) getFewestButtonPresses(config Config) int {
+	queue := list.New()
+	queue.PushBack(QueueElement{config.States, 0})
+
+	visitedStates := make(map[string]bool)
+	visitedStates[fmt.Sprintf("%v", config.States)] = true
+
+	// implementation of BFS with queue
+	for queue.Len() > 0 {
+		current := queue.Front().Value.(QueueElement)
+		queue.Remove(queue.Front())
+
+		if slices.Equal(current.States, config.FinalStates) {
+			return current.depth
+		}
+		for _, button := range config.Buttons {
+			newStates := make([]bool, len(current.States))
+			copy(newStates, current.States)
+			for _, toggledIndicator := range button.ToggledIndicators {
+				newStates[toggledIndicator] = !newStates[toggledIndicator]
+			}
+
+			stateStr := fmt.Sprintf("%v", newStates)
+			if _, ok := visitedStates[stateStr]; !ok {
+				visitedStates[stateStr] = true
+				queue.PushBack(QueueElement{newStates, current.depth + 1})
+			}
+		}
+	}
+	return -1
 }
 
 func (d Day10) ReadConfigs(lines []string) []Config {
 	configs := make([]Config, 0)
 	for _, line := range lines {
-		config := Config{}
 		parts := strings.Fields(line)
 
-		states := make([]bool, 0)
+		finalStates := make([]bool, 0)
 		for _, s := range []rune(parts[0][1 : len(parts[0])-1]) {
 			if s == '#' {
-				states = append(states, true)
+				finalStates = append(finalStates, true)
 			} else {
-				states = append(states, false)
+				finalStates = append(finalStates, false)
 			}
 		}
-		config.RequiredStates = states
+		config := Config{
+			States:      make([]bool, len(finalStates)),
+			FinalStates: finalStates,
+		}
 
 		buttons := make([]Button, 0)
 		for _, buttonStr := range parts[1 : len(parts)-1] {

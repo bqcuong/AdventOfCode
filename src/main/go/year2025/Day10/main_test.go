@@ -21,7 +21,7 @@ func TestPart1(t *testing.T) {
 		{
 			name:      "Input",
 			inputPath: "input.txt",
-			expected:  4772103936,
+			expected:  578,
 		},
 	}
 	var day c.Day = Day10{}
