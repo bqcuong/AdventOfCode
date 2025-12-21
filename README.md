@@ -16,20 +16,20 @@ This repository contains my solutions in Java, Go, and Python for the [Advent of
 ```
 
 ## 2025
-| Day | Task                                                       | Stars | Solutions                                                                                    |
-|:---:|------------------------------------------------------------|:------|----------------------------------------------------------------------------------------------|
-| 01  | [Secret Entrance](https://adventofcode.com/2025/day/1)     | ⭐⭐    | [Code](src/main/go/year2025/Day01/main.go), [Test](src/main/go/year2025/Day01/main_test.go)  |
-| 02  | [Gift Shop](https://adventofcode.com/2025/day/2)           | ⭐⭐    | [Code](src/main/go/year2025/Day02/main.go), [Test](src/main/go/year2025/Day02/main_test.go)  |
-| 03  | [Lobby](https://adventofcode.com/2025/day/3)               | ⭐⭐    | [Code](src/main/go/year2025/Day03/main.go), [Test](src/main/go/year2025/Day03/main_test.go)  |
-| 04  | [Printing Department](https://adventofcode.com/2025/day/4) | ⭐⭐    | [Code](src/main/go/year2025/Day04/main.go), [Test](src/main/go/year2025/Day04/main_test.go)  |
-| 05  | [Cafeteria](https://adventofcode.com/2025/day/5)           | ⭐⭐    | [Code](src/main/go/year2025/Day05/main.go), [Test](src/main/go/year2025/Day05/main_test.go)  |
-| 06  | [Trash Compactor](https://adventofcode.com/2025/day/6)     | ⭐⭐    | [Code](src/main/go/year2025/Day06/main.go), [Test](src/main/go/year2025/Day06/main_test.go)  |
-| 07  | [Laboratories](https://adventofcode.com/2025/day/7)        | ⭐⭐    | [Code](src/main/go/year2025/Day07/main.go), [Test](src/main/go/year2025/Day07/main_test.go)  |
-| 08  | [Playground](https://adventofcode.com/2025/day/8)          | ⭐⭐    | [Code](src/main/go/year2025/Day08/main.go), [Test](src/main/go/year2025/Day08/main_test.go)  |
-| 09  | [Movie Theater](https://adventofcode.com/2025/day/9)       | ⭐⭐    | [Code](src/main/go/year2025/Day09/main.go), [Test](src/main/go/year2025/Day09/main_test.go)  |
-| 10  | [Factory](https://adventofcode.com/2025/day/10)            | ⭐⭐    | [Code](src/main/go/year2025/Day10/main.go), [Test](src/main/go/year2025/Day010/main_test.go) |
-| 11  | [Reactor](https://adventofcode.com/2025/day/11)            | ⭐⭐    | [Code](src/main/go/year2025/Day11/main.go), [Test](src/main/go/year2025/Day011/main_test.go) |
-| 12  | [](https://adventofcode.com/2025/day/12)                   |       | [Code](src/main/go/year2025/Day12/main.go), [Test](src/main/go/year2025/Day012/main_test.go) |
+| Day | Task                                                        | Stars | Solutions                                                                                    |
+|:---:|-------------------------------------------------------------|:------|----------------------------------------------------------------------------------------------|
+| 01  | [Secret Entrance](https://adventofcode.com/2025/day/1)      | ⭐⭐    | [Code](src/main/go/year2025/Day01/main.go), [Test](src/main/go/year2025/Day01/main_test.go)  |
+| 02  | [Gift Shop](https://adventofcode.com/2025/day/2)            | ⭐⭐    | [Code](src/main/go/year2025/Day02/main.go), [Test](src/main/go/year2025/Day02/main_test.go)  |
+| 03  | [Lobby](https://adventofcode.com/2025/day/3)                | ⭐⭐    | [Code](src/main/go/year2025/Day03/main.go), [Test](src/main/go/year2025/Day03/main_test.go)  |
+| 04  | [Printing Department](https://adventofcode.com/2025/day/4)  | ⭐⭐    | [Code](src/main/go/year2025/Day04/main.go), [Test](src/main/go/year2025/Day04/main_test.go)  |
+| 05  | [Cafeteria](https://adventofcode.com/2025/day/5)            | ⭐⭐    | [Code](src/main/go/year2025/Day05/main.go), [Test](src/main/go/year2025/Day05/main_test.go)  |
+| 06  | [Trash Compactor](https://adventofcode.com/2025/day/6)      | ⭐⭐    | [Code](src/main/go/year2025/Day06/main.go), [Test](src/main/go/year2025/Day06/main_test.go)  |
+| 07  | [Laboratories](https://adventofcode.com/2025/day/7)         | ⭐⭐    | [Code](src/main/go/year2025/Day07/main.go), [Test](src/main/go/year2025/Day07/main_test.go)  |
+| 08  | [Playground](https://adventofcode.com/2025/day/8)           | ⭐⭐    | [Code](src/main/go/year2025/Day08/main.go), [Test](src/main/go/year2025/Day08/main_test.go)  |
+| 09  | [Movie Theater](https://adventofcode.com/2025/day/9)        | ⭐⭐    | [Code](src/main/go/year2025/Day09/main.go), [Test](src/main/go/year2025/Day09/main_test.go)  |
+| 10  | [Factory](https://adventofcode.com/2025/day/10)             | ⭐⭐    | [Code](src/main/go/year2025/Day10/main.go), [Test](src/main/go/year2025/Day010/main_test.go) |
+| 11  | [Reactor](https://adventofcode.com/2025/day/11)             | ⭐⭐    | [Code](src/main/go/year2025/Day11/main.go), [Test](src/main/go/year2025/Day011/main_test.go) |
+| 12  | [Christmas Tree Farm](https://adventofcode.com/2025/day/12) | ⭐⭐    | [Code](src/main/go/year2025/Day12/main.go), [Test](src/main/go/year2025/Day012/main_test.go) |
 
 ## 2024
 | Day | Task                                                           | Stars | Solutions                                                                                                        |
